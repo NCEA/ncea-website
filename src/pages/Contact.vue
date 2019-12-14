@@ -1,31 +1,64 @@
 <template>
   <Layout :currentPage="'contact'">
+    <h1>{{ $page.contact.title }}</h1>
+    <p>{{ $page.contact.description }}</p>
 
-    <!-- List posts -->
-    <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
-    </div>
+    <section class="columns">
 
+      <section class="columns-left" v-if="$page.contact.contacts | $page.contact.blurb">
+        <section class="contacts" v-if="$page.contact.contacts">
+          <h5>Contacts</h5>
+          <div class="contacts-list">
+            <ul>
+              <li v-for="contact in $page.contact.contacts" :key="contact.email">
+                <h6>{{ contact.name }}</h6>
+                <p>{{ contact.position }}</p>
+                <a :href="'mailto:' + contact.email" title="Click to open your default email application and create a new email to this contact">
+                  {{ contact.email }}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="blurb" v-if="$page.contact.blurb">
+          <h5>{{ $page.contact.blurb.heading }}</h5>
+          <p>{{ $page.contact.blurb.body }}</p>
+        </section>
+      </section>
+
+      <section class="columns-right">
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required="true" aria-required="true" autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required="true" aria-required="true" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </section>
+
+    </section>
   </Layout>
 </template>
 
 <page-query>
 query {
-  posts: allPost(filter: { published: { eq: true }}) {
-    edges {
-      node {
-        id
-        title
-        date (format: "D. MMMM YYYY")
-        timeToRead
-        description
-        ...on Post {
-          id
-          title
-          path
-        }
-        path
-      }
+  contact(id: "contact") {
+    title
+    description
+    people {
+      name
+      description
+      image
     }
   }
 }
@@ -35,7 +68,7 @@ query {
 export default {
   metaInfo () {
     return {
-      title: this.$page.index.title
+      title: this.$page.contact.title
     }
   }
 }
