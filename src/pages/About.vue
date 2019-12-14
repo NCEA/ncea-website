@@ -4,7 +4,7 @@
     <p>{{ $page.about.description }}</p>
     <section class="people">
       <ul class="people-list">
-        <li class="person" v-for="person in people" :key="person.name">
+        <li class="person" v-for="person in $page.about.people" :key="person.name">
           <div class="person-image">
             <img :src="person.image" :alt="person.name">
           </div>
@@ -36,7 +36,7 @@ query {
 export default {
   metaInfo () {
     return {
-      title: this.$page.index.title
+      title: this.$page.about.title
     }
   }
 }
