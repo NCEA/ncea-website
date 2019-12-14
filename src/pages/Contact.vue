@@ -5,8 +5,8 @@
 
     <section class="columns">
 
-      <section class="columns-left" v-if="$page.contact.contacts | $page.contact.blurb">
-        <section class="contacts" v-if="$page.contact.contacts">
+      <section class="columns-left">
+        <section class="contacts">
           <h5>Contacts</h5>
           <div class="contacts-list">
             <ul>
@@ -20,7 +20,7 @@
             </ul>
           </div>
         </section>
-        <section class="blurb" v-if="$page.contact.blurb">
+        <section class="blurb">
           <h5>{{ $page.contact.blurb.heading }}</h5>
           <p>{{ $page.contact.blurb.body }}</p>
         </section>
