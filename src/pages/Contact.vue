@@ -55,10 +55,14 @@ query {
   contact(id: "contact") {
     title
     description
-    people {
+    contacts {
       name
-      description
-      image
+      position
+      email
+    }
+    blurb {
+      heading
+      body
     }
   }
 }
