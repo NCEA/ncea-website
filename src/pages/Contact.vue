@@ -11,21 +11,20 @@
 
         <section class="contacts">
           <h5>Contacts</h5>
-          <div class="contacts-list">
-            <ul>
-              <li
-                v-for="contact in $page.data.contacts"
-                :key="contact.email">
-                <h6>{{ contact.name }}</h6>
-                <p>{{ contact.position }}</p>
-                <a
-                  :href="'mailto:' + contact.email"
-                  title="Click to open your default email application and create a new email to this contact">
-                  {{ contact.email }}
-                </a>
-              </li>
-            </ul>
-          </div>
+          <ul class="contacts-list">
+            <li
+              class="contacts-list-item"
+              v-for="contact in $page.data.contacts"
+              :key="contact.email">
+              <h6>{{ contact.name }}</h6>
+              <p>{{ contact.position }}</p>
+              <a
+                :href="'mailto:' + contact.email"
+                title="Click to open your default email application and create a new email to this contact">
+                {{ contact.email }}
+              </a>
+            </li>
+          </ul>
         </section>
 
         <section class="blurb">
@@ -133,5 +132,38 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/style/_variables.scss';
 
+.columns {
+  display: flex;
+  margin: 1em 0 0;
+
+  &-left {
+    max-width: 300px;
+    margin: 0 2em 0 0;
+    padding: 1em 2em 1em 0;
+    border-right: 1px solid rgba($color-neutral-light, .15);
+
+    .contacts {
+      margin: 0 0 2em;
+
+      &-list {
+        list-style: none;
+        padding: 0;
+        margin: 1.5em 0;
+
+        &-item {
+          margin: 0 0 2em;
+        }
+      }
+    }
+  }
+  &-right {
+    flex: 1;
+
+    .form {
+      max-width: 500px;
+    }
+  }
+}
 </style>
