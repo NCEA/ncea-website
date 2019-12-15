@@ -133,6 +133,7 @@ export default {
 
   &-toggle {
     position: absolute;
+    outline: none;
     right: 0;
     padding: 2em 3em 2em 2em;
     border: none;
