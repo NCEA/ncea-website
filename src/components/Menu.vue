@@ -1,5 +1,5 @@
 <template>
-  <section
+  <div
     :class="['menu', { 'menu-active': visible }]">
 
     <a class="menu-logo" href="/">
@@ -33,7 +33,7 @@
       {{ visible ? 'Close' : 'Menu' }}
     </button>
 
-  </section>
+  </div>
 </template>
 
 <script>
@@ -150,7 +150,7 @@ export default {
       position: absolute;
       content: '';
       width: 30px;
-      height: 2px;
+      height: 2.5px;
       right: 0;
       border-radius: 2px;
       background: $color-accent-dark;
