@@ -58,5 +58,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/style/_variables.scss';
 
+.people {
+  &-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.person {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 2em;
+
+  &-image {
+    display: block;
+    background: $color-accent-light;
+    min-width: 150px;
+    min-height: 150px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: 0 4px 16px rgba($color-neutral-light, .15),
+                inset 0 0 0 1px rgba($color-neutral-light, .25);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-details {
+    margin: 0 0 0 2em;
+  }
+}
 </style>
