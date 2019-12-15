@@ -2,14 +2,6 @@
   <div id="app">
 
     <header class="header">
-      <a
-        class="header-logo"
-        href="/">
-        <img
-          class="header-logo-image"
-          src="/images/uploads/ncea-logo.svg"
-          alt="NCEA">
-      </a>
       <Menu
         :pages="pages"
         :currentPage="currentPage"/>
@@ -71,19 +63,7 @@ export default {
 .header {
   position: relative;
   height: 100px;
-  margin: 1.5em 1em 3.5em;
-  
-  &-logo {
-    position: absolute;
-    background: none;
-    box-shadow: none;
-    z-index: 99;
-    cursor: pointer;
-
-    &-image {
-      height: 90px;
-    }
-  }
+  margin: 1.5em 20px 3.5em;
 }
 
 .footer {

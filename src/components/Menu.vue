@@ -1,5 +1,13 @@
 <template>
-  <section class="menu">
+  <section
+    :class="['menu', { 'menu-active': visible }]">
+
+    <a class="menu-logo" href="/">
+      <img
+        class="menu-logo-image"
+        src="/images/uploads/ncea-logo.svg"
+        alt="NCEA">
+    </a>
 
     <transition name="menu-nav" mode="out-in">
       <div
@@ -52,6 +60,27 @@ export default {
 @import '~/assets/style/_variables.scss';
 
 .menu {
+  display: block;
+  max-width: $max-width - 40px;
+  width: 100%;
+  z-index: 9;
+
+  &-active {
+    position: fixed;
+  }
+
+  &-logo {
+    position: absolute;
+    background: none;
+    box-shadow: none;
+    z-index: 99;
+    cursor: pointer;
+
+    &-image {
+      height: 90px;
+    }
+  }
+
   &-nav {
     display: block;
     position: fixed;
