@@ -3,7 +3,7 @@
     :showBox="true"
     :currentPage="parseInt($page.data.id, 10)">
 
-    <section class="status">
+    <div class="status">
       <a
         class="status-back button"
         href="/news">
@@ -18,11 +18,11 @@
         <p>Currently reading:</p>
         <h6>{{ $page.post.title }}</h6>
       </div>
-    </section>
+    </div>
 
     <article class="post">
 
-      <section class="post-details">
+      <div class="post-details">
         <h1 class="post-details-title">
           {{ $page.post.title }}
         </h1>
@@ -32,12 +32,12 @@
             <strong>{{ $page.post.timeToRead }} min read.</strong>
           </template>
         </span>
-      </section>
+      </div>
 
-      <section 
+      <div 
         class="post-content" 
         v-html="$page.post.content">
-      </section>
+      </div>
 
     </article>
 

@@ -87,7 +87,6 @@
               id="message"
               name="message"
               required="true"
-              aria-required="true"
               rows="5"
               placeholder="Enter your message..."></textarea>
           </div>
