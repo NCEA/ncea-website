@@ -5,9 +5,9 @@
     <h1>{{ $page.data.title }}</h1>
     <p>{{ $page.data.description }}</p>
 
-    <section class="columns">
+    <div class="columns">
 
-      <section class="columns-left">
+      <div class="columns-left">
 
         <section class="contacts">
           <h5>Contacts</h5>
@@ -32,9 +32,9 @@
           <p>{{ $page.data.blurb.body }}</p>
         </section>
 
-      </section>
+      </div>
 
-      <section class="columns-right">
+      <div class="columns-right">
         <form
           class="form"
           name="contact"
@@ -72,7 +72,6 @@
               id="email"
               name="email"
               required="true"
-              aria-required="true"
               autocomplete="email"
               placeholder="Enter your email address...">
           </div>
@@ -111,9 +110,9 @@
             </button>
           </div>
         </form>
-      </section>
+      </div>
 
-    </section>
+    </div>
   </Layout>
 </template>
 

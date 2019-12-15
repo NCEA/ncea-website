@@ -169,12 +169,12 @@ export default {
   &-toggle-active {
     &::before {
       transform: rotate(45deg);
-      margin: 10px 0 0;
+      margin: 10.5px 0 0;
     }
 
     &::after {
       transform: rotate(-45deg);
-      margin: -12px 0 0;
+      margin: -11.5px 0 0;
     }
   }
 }
