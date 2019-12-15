@@ -14,6 +14,11 @@
         class="button button-primary"
         :href="$page.data.splash.button.url">
         {{ $page.data.splash.button.name }}
+        <span class="button-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+        </span>
       </a>
     </section>
 
@@ -66,8 +71,6 @@ export default {
     margin: auto;
     width: 100%;
     height: 100%;
-    opacity: .25;
-    filter: blur(4px);
     z-index: -1;
   }
 

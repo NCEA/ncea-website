@@ -14,6 +14,10 @@ body {
     max-width: $max-width;
 }
 
+main {
+    outline: none;
+}
+
 h1 {
     color: $color-accent-dark;
     font-weight: 600;
