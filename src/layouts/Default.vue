@@ -18,7 +18,7 @@
     <main
       :class="{ box: showBox}"
       tabindex="-1">
-      <slot/>
+        <slot/>
     </main>
 
     <footer class="footer">
@@ -81,12 +81,13 @@ export default {
     cursor: pointer;
 
     &-image {
-      height: 100px;
+      height: 90px;
     }
   }
 }
 
 .footer {
+  height: 150px;
   font-size: $font-size-label;
   color: $color-neutral-light;
   line-height: 1.5;
