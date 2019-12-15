@@ -57,5 +57,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.posts {
+  margin: 0 0 1em;
+}
 </style>
