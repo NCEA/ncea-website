@@ -7,7 +7,7 @@
         display: block;
         width: 100%;
         outline: none;
-        background-color: $color-background;
+        background-color: $color-background-light;
         border: none;
         border-radius: 2px;
         padding: .75em 1em;
@@ -26,16 +26,13 @@
             box-shadow: 0 0 0 3px $color-error-dark,
                         0 4px 8px $color-error-light;
         }
-
-        &-textarea {
-
-        }
     }
 
     .label {
         display: block;
+        text-transform: uppercase;
         color: $color-neutral-light;
-        font: 600 $font-size-p $font-family;
+        font: 600 $font-size-label $font-family;
         margin: 1em 0 .5em;
 
        &:focus,

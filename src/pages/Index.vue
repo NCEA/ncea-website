@@ -1,11 +1,14 @@
 <template>
-  <Layout :currentPage="$page.data.id">
+  <Layout
+    :showBox="false"
+    :currentPage="parseInt($page.data.id, 10)">
 
-    <section
-      class="splash"
-      :style="{ background: 'url(' + $page.data.splash.image + ')' }">
+    <section class="splash">
+      <img
+        :src="$page.data.splash.image"
+        alt="Splash background"/>
       <h1>{{ $page.data.splash.heading }}</h1>
-      <h2>{{ $page.data.splash.subheading }}</h2>
+      <h6>{{ $page.data.splash.subheading }}</h6>
       <a
         class="button button-primary"
         :href="$page.data.splash.button.url">
@@ -18,7 +21,7 @@
 
 <page-query>
 query {
-  data: index(id: "index") {
+  data: index(id: 0) {
     id
     title
     splash { 

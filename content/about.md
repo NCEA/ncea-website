@@ -1,5 +1,5 @@
 ---
-id: about
+id: 1
 title: About
 published: true
 description: "Formed in 1991 with the objective of providing a high standard of Christian Education in local state high schools, the NCEA now employs Elizabeth Harnwell to work at Hornsby Girls' High School, and Tony Jones to work at Normanhurst Boys' High School. Both are employed on a part-time basis.

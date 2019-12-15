@@ -1,5 +1,5 @@
 ---
-id: index
+id: 0
 title: Normanhurst Christian Education Association
 published: true
 splash:

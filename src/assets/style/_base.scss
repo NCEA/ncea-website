@@ -7,45 +7,53 @@
 body {
     margin: 0 auto;
     padding: 0;
-    background: $color-background;
+    background: $color-background-dark;
     color: $color-neutral-dark;
     font: 400 $font-size-p $font-family;
     line-height: 1.25;
-    max-width: 1200px;
+    max-width: $max-width;
 }
 
 h1 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h1;
-    margin: .75em 0;
+    text-transform: uppercase;
+    margin: .5em 0;
 }
 h2 {
+    color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h2;
-    margin: .75em 0;
+    text-transform: uppercase;
+    margin: .5em 0;
 }
 h3 {
+    color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h3;
+    text-transform: uppercase;
     margin: .5em 0;
 }
 h4 {
-    color: $color-neutral-light;
+    color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h4;
+    text-transform: uppercase;
     margin: .5em 0;
 }
 h5 {
-    color: $color-neutral-light;
+    color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h5;
+    text-transform: uppercase;
     margin: .25em 0;
 }
 h6 {
     color: $color-neutral-light;
     font-weight: 600;
     font-size: $font-size-h6;
+    text-transform: uppercase;
     margin: .15em 0;
 }
 p {
@@ -55,7 +63,7 @@ p {
     margin: .5em 0;
 }
 
-quote {
+blockquote {
     display: inline-block;
     margin: 0 .25em;
     padding: 1em 1.25em;
@@ -78,6 +86,12 @@ a {
         background: $color-accent-light;
         box-shadow: 0 2px $color-accent-dark;
     }
+}
+
+hr {
+    height: 1px;
+    background: rgba($color-neutral-light, .15);
+    border: none;
 }
 
 .icon-link {

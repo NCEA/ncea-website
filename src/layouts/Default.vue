@@ -2,17 +2,22 @@
   <div id="app">
 
     <header class="header">
-      <div class="header-left">
-        <img src="/images/uploads/logo.svg" alt="NCEA">
-      </div>
-      <div class="header-right">
-        <button class="menu-button">
-          Menu
-        </button>
-      </div>
+      <a
+        class="header-logo"
+        href="/">
+        <img
+          class="header-logo-image"
+          src="/images/uploads/ncea-logo.svg"
+          alt="NCEA">
+      </a>
+      <Menu
+        :pages="pages"
+        :currentPage="currentPage"/>
     </header>
 
-    <main class="main">
+    <main
+      :class="{ box: showBox}"
+      tabindex="-1">
       <slot/>
     </main>
 
@@ -32,13 +37,62 @@
 </template>
 
 <script>
+import Menu from '~/components/Menu.vue'
+
 export default {
+  components: {
+    Menu
+  },
   props: {
-    currentPage: String
+    currentPage: Number,
+    showBox: Boolean
+  },
+  data () {
+    return {
+      pages: [
+        { id: 0, url: '/', name: 'Home' },
+        { id: 1, url: '/about', name: 'About' },
+        { id: 2, url: '/contact', name: 'Contact' },
+        { id: 3, url: '/news', name: 'News' }
+      ]
+    }
+  },
+  methods: {
+    goHome () {
+      window.location = '/'
+    }
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@import '~/assets/style/_variables.scss';
 
+.header {
+  position: relative;
+  height: 100px;
+  margin: 1.5em 1em 3.5em;
+  
+  &-logo {
+    position: absolute;
+    background: none;
+    box-shadow: none;
+    z-index: 99;
+    cursor: pointer;
+
+    &-image {
+      height: 100px;
+    }
+  }
+}
+
+.footer {
+  font-size: $font-size-label;
+  color: $color-neutral-light;
+  line-height: 1.5;
+  padding: 2.5em 0;
+  margin: 2.5em 1em;
+  text-align: center;
+  border-top: 1px solid rgba($color-neutral-light, .15);
+}
 </style>

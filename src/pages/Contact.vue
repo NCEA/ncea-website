@@ -1,5 +1,7 @@
 <template>
-  <Layout :currentPage="$page.data.id">
+  <Layout
+    :showBox="true"
+    :currentPage="parseInt($page.data.id, 10)">
     <h1>{{ $page.data.title }}</h1>
     <p>{{ $page.data.description }}</p>
 
@@ -103,7 +105,7 @@
 
 <page-query>
 query {
-  data: contact(id: "contact") {
+  data: contact(id: 2) {
     id
     title
     description
@@ -130,6 +132,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>

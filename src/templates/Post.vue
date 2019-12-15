@@ -1,5 +1,7 @@
 <template>
-  <Layout>
+  <Layout
+    :showBox="true"
+    :currentPage="parseInt($page.data.id, 10)">
     <article class="post">
 
       <section class="post-details">
@@ -33,6 +35,9 @@ query Post ($id: ID!) {
     description
     content
   }
+  data: news(id: 3) {
+    id
+  }
 }
 </page-query>
 
@@ -52,6 +57,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 </style>
