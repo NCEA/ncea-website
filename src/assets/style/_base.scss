@@ -1,28 +1,89 @@
-// Default
 * {
-	box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body {
- 	background-color: var(--bg-color);
- 	color: var(--body-color);
- 	transition: color .6s, background-color .6s;
- 	font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
+    margin: 0 auto;
+    padding: 0;
+    background: $color-background;
+    color: $color-neutral-dark;
+    font: 400 $font-size-p $font-family;
+    line-height: 1.25;
+    max-width: 1200px;
 }
 
-a:not(.button) {
-	color: var(--link-color);
- 	transition: opacity .2s;
-	&:hover {
-		opacity: .8;
-	}
+h1 {
+    color: $color-accent-dark;
+    font-weight: 600;
+    font-size: $font-size-h1;
+    margin: .75em 0;
+}
+h2 {
+    font-weight: 600;
+    font-size: $font-size-h2;
+    margin: .75em 0;
+}
+h3 {
+    font-weight: 600;
+    font-size: $font-size-h3;
+    margin: .5em 0;
+}
+h4 {
+    color: $color-neutral-light;
+    font-weight: 600;
+    font-size: $font-size-h4;
+    margin: .5em 0;
+}
+h5 {
+    color: $color-neutral-light;
+    font-weight: 600;
+    font-size: $font-size-h5;
+    margin: .25em 0;
+}
+h6 {
+    color: $color-neutral-light;
+    font-weight: 600;
+    font-size: $font-size-h6;
+    margin: .15em 0;
+}
+p {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: $font-size-p;
+    margin: .5em 0;
 }
 
-img {
-	max-width: 100%;
+quote {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em 1.25em;
+    border-left: 4px solid $color-accent-dark;
+    background: $color-accent-light;
+    color: $color-neutral-dark;
+    font: 400 $font-size-p $font-family;
+}
+
+a {
+    outline: none;
+    color: $color-accent-dark;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 2px;
+    box-shadow: 0 1px $color-accent-light;
+
+    &:focus,
+    &:active {
+        background: $color-accent-light;
+        box-shadow: 0 2px $color-accent-dark;
+    }
+}
+
+.icon-link {
+    content: '#';
+    font-weight: 600;
+    font-size: inherit;
+    color: $color-neutral-light;
+    padding: .15em;
 }

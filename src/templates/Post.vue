@@ -1,40 +1,27 @@
 <template>
-  <Layout :currentPage="'news'">
-    <div class="post-title">
-      <h1 class="post-title__text">
-        {{ $page.post.title }}
-      </h1>
+  <Layout>
+    <article class="post">
 
-      <PostMeta :post="$page.post" />
+      <section class="post-details">
+        <h1 class="post-details-title">
+          {{ $page.post.title }}
+        </h1>
+        <span class="post-details-meta">
+          Posted {{ $page.post.date }}.
+          <template v-if="$page.post.timeToRead">
+            <strong>{{ $page.post.timeToRead }} min read.</strong>
+          </template>
+        </span>
+      </section>
 
-    </div>
+      <section 
+        class="post-content" 
+        v-html="$page.post.content">
+      </section>
 
-    <div class="post content-box">
-      <div class="post__content" v-html="$page.post.content" />
-    </div>
+    </article>
   </Layout>
 </template>
-
-<script>
-import PostMeta from '~/components/PostMeta'
-
-export default {
-  components: {
-    PostMeta
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
-        }
-      ]
-    }
-  }
-}
-</script>
 
 <page-query>
 query Post ($id: ID!) {
@@ -49,38 +36,22 @@ query Post ($id: ID!) {
 }
 </page-query>
 
+<script>
+export default {
+  metaInfo () {
+    return {
+      title: this.$page.post.title,
+      meta: [
+        {
+          name: 'description',
+          content: this.$page.post.description
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style lang="scss">
-.post-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
-}
 
-.post {
-
-  &__content {
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
-    }
-
-    img {
-      width: calc(100% + var(--space) * 2);
-      margin-left: calc(var(--space) * -1);
-      display: block;
-      max-width: none;
-    }
-  }
-}
-
-.post-comments {
-  padding: calc(var(--space) / 2);
-
-  &:empty {
-    display: none;
-  }
-}
 </style>

@@ -1,47 +1,98 @@
 <template>
-  <Layout :currentPage="'contact'">
-    <h1>{{ $page.contact.title }}</h1>
-    <p>{{ $page.contact.description }}</p>
+  <Layout :currentPage="$page.data.id">
+    <h1>{{ $page.data.title }}</h1>
+    <p>{{ $page.data.description }}</p>
 
     <section class="columns">
 
       <section class="columns-left">
+
         <section class="contacts">
           <h5>Contacts</h5>
           <div class="contacts-list">
             <ul>
-              <li v-for="contact in $page.contact.contacts" :key="contact.email">
+              <li
+                v-for="contact in $page.data.contacts"
+                :key="contact.email">
                 <h6>{{ contact.name }}</h6>
                 <p>{{ contact.position }}</p>
-                <a :href="'mailto:' + contact.email" title="Click to open your default email application and create a new email to this contact">
+                <a
+                  :href="'mailto:' + contact.email"
+                  title="Click to open your default email application and create a new email to this contact">
                   {{ contact.email }}
                 </a>
               </li>
             </ul>
           </div>
         </section>
+
         <section class="blurb">
-          <h5>{{ $page.contact.blurb.heading }}</h5>
-          <p>{{ $page.contact.blurb.body }}</p>
+          <h5>{{ $page.data.blurb.heading }}</h5>
+          <p>{{ $page.data.blurb.body }}</p>
         </section>
+
       </section>
 
       <section class="columns-right">
-        <form name="contact" method="POST" data-netlify="true">
+        <form
+          class="form"
+          name="contact"
+          method="POST"
+          data-netlify="true">
           <div class="form-group">
-            <label for="name">Name: </label>
-            <input type="text" id="name" name="name" autocomplete="name">
+            <label
+              ref="nameLabel"
+              class="label"
+              for="name">Name: </label>
+            <input
+              @focus="$refs.nameLabel.classList.add('label-focused')"
+              @blur="$refs.nameLabel.classList.remove('label-focused')"
+              class="input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              placeholder="Enter your full name...">
           </div>
           <div class="form-group">
-            <label for="email">Email: </label>
-            <input type="email" id="email" name="email" required="true" aria-required="true" autocomplete="email">
+            <label
+              ref="emailLabel"
+              class="label"
+              for="email">Email: </label>
+            <input
+              @focus="$refs.emailLabel.classList.add('label-focused')"
+              @blur="$refs.emailLabel.classList.remove('label-focused')"
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              required="true"
+              aria-required="true"
+              autocomplete="email"
+              placeholder="Enter your email address...">
           </div>
           <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required="true" aria-required="true" rows="5"></textarea>
+            <label
+              ref="messageLabel"
+              class="label"
+              for="message">Message:</label>
+            <textarea
+              @focus="$refs.messageLabel.classList.add('label-focused')"
+              @blur="$refs.messageLabel.classList.remove('label-focused')"
+              class="input input-textarea"
+              id="message"
+              name="message"
+              required="true"
+              aria-required="true"
+              rows="5"
+              placeholder="Enter your message..."></textarea>
           </div>
           <div class="form-group">
-            <button type="submit">Submit</button>
+            <button
+              class="button button-primary"
+              type="submit">
+              Submit
+            </button>
           </div>
         </form>
       </section>
@@ -52,7 +103,8 @@
 
 <page-query>
 query {
-  contact(id: "contact") {
+  data: contact(id: "contact") {
+    id
     title
     description
     contacts {
@@ -72,8 +124,12 @@ query {
 export default {
   metaInfo () {
     return {
-      title: this.$page.contact.title
+      title: this.$page.data.title
     }
   }
 }
 </script>
+
+<style lang="scss">
+
+</style>

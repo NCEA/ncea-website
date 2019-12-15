@@ -1,42 +1,18 @@
-// Default variables
-html {
-	--base-font-size: 20px;
-}
+// Colors
+$color-background: rgb(255, 255, 255);
+$color-accent-light: rgb(235, 245, 250);
+$color-accent-dark: rgb(15, 125, 165);
+$color-neutral-light: rgb(110, 120, 125);
+$color-neutral-dark: rgb(25, 50, 60);
+$color-error-light: rgb(250, 225, 230);
+$color-error-dark: rgb(165, 15, 20);
 
-// Light default theme
-body {
- 	--bg-color: #F3F7F9;
- 	--bg-content-color: #fff;
- 	--bg-code: #fffbf3;
- 	--body-color: #444;
- 	--title-color: #111;
- 	--link-color: #6b17e6;
- 	--border-color:  rgba(0,0,0,.1);;
-  --space: 3.5rem;
-  --content-width: 860px;
-  --header-height: 80px;
-  --radius: 5px;
-}
-
-// Make  things smaller for mobile
-@media screen and (max-width: 650px) {
-	html {
-		--base-font-size: 17px;
-	}
-	body {
-		--space: 1.5rem;
-		--header-height: 60px;
-	}
-}
-
-
-// Override variables for Dark theme
-body[data-theme="dark"] {
- 	--bg-color: #0D2538;
- 	--bg-content-color: #0f2d44;
- 	--bg-code: rgba(0,0,0,.3);
- 	--border-color:  rgba(255,255,255,.1);;
- 	--body-color: #ced8de;
- 	--title-color: #fff;
- 	--link-color: #af9cef;
-}
+// Typography - https://www.modularscale.com/?1&em&1.125
+$font-family: 'Open Sans', 'Segoe UI', 'Helvetica Neue', -apple-system, system-ui, BlinkMacSystemFont, sans-serif;
+$font-size-h1: 2.281em;
+$font-size-h2: 2.027em;
+$font-size-h3: 1.802em;
+$font-size-h4: 1.602em;
+$font-size-h5: 1.266em;
+$font-size-h6: 1em;
+$font-size-p: 1em;

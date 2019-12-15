@@ -1,0 +1,47 @@
+.form {
+    &-group {
+        margin: 1.5em 0;
+    }
+
+    .input {
+        display: block;
+        width: 100%;
+        outline: none;
+        background-color: $color-background;
+        border: none;
+        border-radius: 2px;
+        padding: .75em 1em;
+        color: $color-neutral-dark;
+        font: 400 $font-size-p $font-family;
+        box-shadow: 0 0 0 1px rgba($color-neutral-light, .5),
+                    0 2px 4px rgba($color-neutral-dark, .15);
+
+        &:focus,
+        &:active {
+            box-shadow: 0 0 0 3px $color-accent-dark,
+                        0 4px 8px rgba($color-accent-dark, .25);
+        }
+
+        &-error {
+            box-shadow: 0 0 0 3px $color-error-dark,
+                        0 4px 8px $color-error-light;
+        }
+
+        &-textarea {
+
+        }
+    }
+
+    .label {
+        display: block;
+        color: $color-neutral-light;
+        font: 600 $font-size-p $font-family;
+        margin: 1em 0 .5em;
+
+       &:focus,
+       &:active,
+       &-focused {
+            color: $color-accent-dark;
+        }
+    }
+}

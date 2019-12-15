@@ -1,9 +1,13 @@
 <template>
-  <Layout :currentPage="'news'">
+  <Layout :currentPage="$page.data.id">
 
-    <!-- List posts -->
+    <h1>{{ $page.data.title }}</h1>
+
     <div class="posts">
-      <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
+      <PostCard
+        v-for="edge in $page.posts.edges"
+        :key="edge.node.id"
+        :post="edge.node"/>
     </div>
 
   </Layout>
@@ -28,6 +32,10 @@ query {
       }
     }
   }
+  data: news(id: "news") {
+    id
+    title
+  }
 }
 </page-query>
 
@@ -40,8 +48,12 @@ export default {
   },
   metaInfo () {
     return {
-      title: this.$page.index.title
+      title: this.$page.data.title
     }
   }
 }
 </script>
+
+<style lang="scss">
+
+</style>
