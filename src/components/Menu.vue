@@ -20,7 +20,7 @@
 
     <button
       @click="visible=!visible"
-      class="menu-toggle"
+      :class="['menu-toggle', { 'menu-toggle-active': visible }]"
       :title="visible ? 'Close menu' : 'Open menu'">
       {{ visible ? 'Close' : 'Menu' }}
     </button>
@@ -105,7 +105,47 @@ export default {
   &-toggle {
     position: absolute;
     right: 0;
+    padding: 2em 3em 2em 2em;
+    border: none;
+    background: none;
+    color: $color-accent-dark;
+    font: 600 $font-size-p $font-family;
+    text-transform: uppercase;
     z-index: 99;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 30px;
+      height: 2px;
+      right: 0;
+      border-radius: 2px;
+      background: $color-accent-dark;
+      transition: .2s ease;
+    }
+
+    &::before {
+      margin: 2px 0 0;
+    }
+
+    &::after {
+      margin: -4px 0 0;
+    }
+  }
+
+  &-toggle-active {
+    &::before {
+      transform: rotate(45deg);
+      margin: 10px 0 0;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      margin: -12px 0 0;
+    }
   }
 }
 </style>

@@ -23,7 +23,7 @@ h1 {
     font-weight: 600;
     font-size: $font-size-h1;
     text-transform: uppercase;
-    margin: 1em 0;
+    margin: .75em 0;
 }
 h2 {
     color: $color-accent-dark;
@@ -72,9 +72,11 @@ blockquote {
     margin: 0 .25em;
     padding: 1em 1.25em;
     border-left: 4px solid $color-accent-dark;
-    background: $color-accent-light;
     color: $color-neutral-dark;
     font: 400 $font-size-p $font-family;
+    background: no-repeat top left url('/images/uploads/quote.svg'),
+                $color-accent-light;
+    background-size: 48px;
 }
 
 a {
