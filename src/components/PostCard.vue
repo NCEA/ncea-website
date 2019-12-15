@@ -8,7 +8,7 @@
       v-html="post.title"/>
 
     <span class="post-card-meta">
-      Posted {{ post.date }}.
+      Posted {{ post.date }} | 
       <template v-if="post.timeToRead">
         <strong>{{ post.timeToRead }} min read.</strong>
       </template>
@@ -45,6 +45,7 @@ export default {
   &-meta {
     display: block;
     margin: 1em 0;
+    font-weight: 400;
     font-size: $font-size-label;
     color: $color-neutral-light;
   }
