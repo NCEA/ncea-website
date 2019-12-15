@@ -6,7 +6,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "news" # Used in routes, e.g., /admin/collections/blog
     label: "News" # Used in the UI
-    folder: "content/news" # The path to the folder where the documents are stored
+    folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: 'md'
@@ -19,7 +19,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - file: "content/_index.md"
+      - file: "content/index.md"
         label: "Home Page"
         name: "home"
         fields:
@@ -33,7 +33,7 @@ collections:
                     {label: "Url", name: "url", widget: "string"}
                 ]}
             ]}
-      - file: "site/content/contact/_index.md"
+      - file: "site/content/contact.md"
         label: "Contact Page"
         name: "contact"
         fields:
@@ -48,7 +48,7 @@ collections:
               {label: "Position", name: "position", widget: "string"},
               {label: "Email", name: "email", widget: "string"}
             ]}
-      - file: "site/content/about/_index.md"
+      - file: "site/content/about.md"
         label: "About Page"
         name: "about"
         fields:
@@ -60,3 +60,8 @@ collections:
               {label: "Quote", name: "quote", widget: "text"},
               {label: "Image", name: "image", widget: "image"}
             ]}
+      - file: "site/content/news.md"
+        label: "News Page"
+        name: "news"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
