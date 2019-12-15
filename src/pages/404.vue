@@ -10,8 +10,10 @@
 
 <script>
 export default {
-  metaInfo: {
-    title: '404'
+  metaInfo () {
+    return {
+      title: '404'
+    }
   }
 }
 </script>
