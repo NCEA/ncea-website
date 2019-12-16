@@ -6,7 +6,6 @@
 
 module.exports = {
   siteName: 'NCEA',
-  siteDescription: 'Formed in 1991 with the objective of providing a high standard of Christian Education in local state high schools.',
 
   templates: {
     Post: '/news/:title'

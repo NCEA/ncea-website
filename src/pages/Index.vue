@@ -47,7 +47,13 @@ query {
 export default {
   metaInfo () {
     return {
-      title: this.$page.data.title
+      title: this.$page.data.title,
+      meta: [
+        {
+          name: 'description',
+          content: 'Formed in 1991 with the objective of providing a high standard of Christian Education in local state high schools.'
+        }
+      ]
     }
   }
 }
