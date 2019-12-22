@@ -42,6 +42,7 @@
           action="/contact-success"
           data-netlify="true"
           data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
           <input name="bot-field" hidden="true">
           <div class="form-group">
             <label
