@@ -6,6 +6,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "news" # Used in routes, e.g., /admin/collections/blog
     label: "News" # Used in the UI
+    description: "Collection of all news posts on the News page of the website."
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -18,11 +19,12 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "pages"
     label: "Pages"
+    description: "Collection of all pages on the website, includes: Home page, About page, Contact page, About page & News page. For modifying news posts please refer to the 'News' collection."
+    delete: false
     files:
       - file: "content/index.md"
         label: "Home Page"
         name: "home"
-        delete: false
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Splash", name: "splash", widget: "object", fields: [
@@ -35,10 +37,21 @@ collections:
                     {label: "Url", name: "url", widget: "string"}
                 ]}
             ]}
+      - file: "content/about.md"
+        label: "About Page"
+        name: "about"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "markdown"}
+          - {label: "People", name: "people", widget: "list", fields: [
+              {label: "Name", name: "name", widget: "string"},
+              {label: "Description", name: "description", widget: "text"},
+              {label: "Quote", name: "quote", widget: "text"},
+              {label: "Image", name: "image", widget: "image"}
+            ]}
       - file: "content/contact.md"
         label: "Contact Page"
         name: "contact"
-        delete: false
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "markdown"}
@@ -51,22 +64,8 @@ collections:
               {label: "Position", name: "position", widget: "string"},
               {label: "Email", name: "email", widget: "string"}
             ]}
-      - file: "content/about.md"
-        label: "About Page"
-        name: "about"
-        delete: false
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Description", name: "description", widget: "markdown"}
-          - {label: "People", name: "people", widget: "list", fields: [
-              {label: "Name", name: "name", widget: "string"},
-              {label: "Description", name: "description", widget: "text"},
-              {label: "Quote", name: "quote", widget: "text"},
-              {label: "Image", name: "image", widget: "image"}
-            ]}
       - file: "content/news.md"
         label: "News Page"
         name: "news"
-        delete: false
         fields:
           - {label: "Title", name: "title", widget: "string"}
