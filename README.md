@@ -1,6 +1,6 @@
 # NCEA Website
 
-Website for the Normanhurst Christian Education Association (NCEA), built using Vue.js & Gridsome and hosted using Netlify.
+Website for the Normanhurst Christian Education Association (NCEA), built using Vue.js & Gridsome and hosted on Netlify.
 
 ## Build
 
