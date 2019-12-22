@@ -14,3 +14,8 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Download-Options = "noopen"
+[[redirects]]
+  from = "https://ncea.netlify.com"
+  to = "https://ncea.net.au"
+  status = 301
+  force = true
