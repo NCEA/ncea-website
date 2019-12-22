@@ -3,3 +3,14 @@
   publish = "dist"
 [build.environment]
   NODE_VERSION = "10"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Allow = "GET, HEAD, POST"
+    Content-Security-Policy = "default-src 'none'; script-src 'self' https://ajax.cloudflare.com; style-src 'self' https://jsdelivr.net https://fonts.googleapis.com; img-src 'self' https:; font-src 'self' https://fonts.gstatic.com/; media-src 'self' https:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; connect-src 'self'; upgrade-insecure-requests; block-all-mixed-content; manifest-src 'self'"
+    Feature-Policy = "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'"
+    Referrer-Policy = "no-referrer"
+    X-Content-Security-Policy = "default-src 'none'; script-src 'self' https://ajax.cloudflare.com; style-src 'self' https://jsdelivr.net https://fonts.googleapis.com; img-src 'self' https:; font-src 'self' https://fonts.gstatic.com/; media-src 'self' https:; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; connect-src 'self'; upgrade-insecure-requests; block-all-mixed-content; manifest-src 'self'"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Download-Options = "noopen"

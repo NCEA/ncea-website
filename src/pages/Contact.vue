@@ -41,8 +41,7 @@
           method="POST"
           action="/contact-success"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          data-netlify-recaptcha="true">
+          data-netlify-honeypot="bot-field">
           <input name="bot-field" hidden="true">
           <div class="form-group">
             <label
@@ -89,17 +88,6 @@
               required="true"
               rows="5"
               placeholder="Enter your message..."></textarea>
-          </div>
-          <div class="form-group">
-            <label
-              id="recaptcha-label"
-              class="label">
-              reCAPTCHA:
-            </label>
-            <div
-              aria-describedby="recaptcha-label"
-              data-netlify-recaptcha="true">
-            </div>
           </div>
           <div class="form-group">
             <button
