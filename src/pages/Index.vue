@@ -4,10 +4,15 @@
     :currentPage="parseInt($page.data.id, 10)">
 
     <section class="splash">
-      <img
-        class="splash-image"
-        :src="$page.data.splash.image"
-        alt="Splash background"/>
+      <picture>
+        <source
+          media="(max-width: 900px)"
+          :srcset="$page.data.splash.smallimage">
+        <img
+          class="splash-image"
+          :src="$page.data.splash.largeimage"
+          alt="Splash background">
+      </picture>
       <h1 class="splash-heading">{{ $page.data.splash.heading }}</h1>
       <h5 class="splash-subheading">{{ $page.data.splash.subheading }}</h5>
       <a
@@ -33,7 +38,8 @@ query {
     splash { 
       heading
       subheading
-      image
+      largeimage
+      smallimage
       button {
         name
         url
@@ -66,7 +72,7 @@ export default {
   position: relative;
   height: 250px;
   text-align: center;
-  margin: calc(50vh - (225px + 1.5em)) 0 calc(50vh - (45px + 5em));
+  margin: calc(50vh - (225px + 1.5em)) 1em calc(50vh - (45px + 5em));
 
   &-image {
     position: fixed;
@@ -91,6 +97,18 @@ export default {
     font-weight: 400;
     text-transform: unset;
     margin: .5em 0 1.5em;
+  }
+}
+
+@media (max-width: 900px) {
+  .splash-image {
+    width: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .splash-heading {
+    font-size: 3.653em;
   }
 }
 </style>

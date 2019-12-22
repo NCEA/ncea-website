@@ -62,7 +62,7 @@ export default {
 .menu {
   display: block;
   max-width: $max-width - 40px;
-  width: 100%;
+  width: calc(100% - 40px);
   z-index: 9;
 
   &-active {
@@ -175,6 +175,27 @@ export default {
     &::after {
       transform: rotate(-45deg);
       margin: -11.5px 0 0;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .menu {
+    &-logo-image {
+      height: 70px;
+      margin: 10px 0;
+    }
+
+    &-nav {
+      height: auto;
+
+      &-list {
+        margin: 140px 0 1em;
+      }
+
+      &-item {
+        display: block;
+      }
     }
   }
 }

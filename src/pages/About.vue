@@ -93,4 +93,18 @@ export default {
     margin: 0 0 0 2em;
   }
 }
+
+@media (max-width: 720px) {
+  .person {
+    flex-direction: column;
+
+    &-image {
+      margin: 1em 0 2em;
+    }
+
+    &-details {
+      margin: 0;
+    }
+  }
+}
 </style>

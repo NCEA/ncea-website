@@ -24,10 +24,11 @@ collections:
         name: "home"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image", name: "image", widget: "image"}
           - {label: "Splash", name: "splash", widget: "object", fields: [
                 {label: "Heading", name: "heading", widget: "string"},
                 {label: "Subheading", name: "subheading", widget: "string"},
+                {label: "Image (Desktop)", name: "largeimage", widget: "image"},
+                {label: "Image (Mobile)", name: "smallimage", widget: "image"},
                 {label: "Button", name: "button", widget: "object", fields: [
                     {label: "Name", name: "name", widget: "string"},
                     {label: "Url", name: "url", widget: "string"}

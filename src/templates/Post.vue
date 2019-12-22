@@ -94,20 +94,18 @@ export default {
   }
 
   &-info {
-    margin: 0 1em 0 0;
+    margin: 0 0 0 1em;
     padding: 0 2em 0;
-    border-left: 1px solid rgba($color-neutral-light, .15);
+    border: 1px solid rgba($color-neutral-light, .15);
+    border-width: 0 0 0 1px;
 
     p {
       margin: 0;
       font-size: $font-size-label;
       color: $color-neutral-light;
     }
-    h5 {
+    h6 {
       margin: 0;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
     }
   }
 }
@@ -128,6 +126,21 @@ export default {
     margin: 2em 0;
     text-align: left;
     max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 720px) {
+  .status {
+    position: relative;
+    margin: 0 0 2em;
+    flex-direction: column;
+    box-shadow: none;
+
+    &-info {
+      display: none;
+    }
   }
 }
 </style>

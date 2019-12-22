@@ -144,7 +144,8 @@ export default {
     max-width: 300px;
     margin: 0 2em 0 0;
     padding: 1em 2em 1em 0;
-    border-right: 1px solid rgba($color-neutral-light, .15);
+    border: 1px solid rgba($color-neutral-light, .15);
+    border-width: 0 1px 0 0;
 
     .contacts {
       margin: 0 0 2em;
@@ -165,6 +166,20 @@ export default {
 
     .form {
       max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .columns {
+    flex-direction: column;
+    align-items: stretch;
+
+    &-left {
+      border-width: 0 0 1px;
+      margin: 0 0 2em;
+      padding: 1em 0 2em;
+      max-width: none;
     }
   }
 }
