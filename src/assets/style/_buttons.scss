@@ -3,10 +3,10 @@
     outline: none;
     border: none;
     border-radius: 2px;
-    padding: 1em 1.25em;
+    padding: 1.25em 1.5em;
     background: $color-accent-light;
     color: $color-accent-dark;
-    font: 600 $font-size-p $font-family;
+    font: 600 $font-size-label $font-family;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: inset 0 0 0 2px rgba($color-accent-dark, .15);
