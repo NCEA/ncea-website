@@ -2,7 +2,7 @@
 title: Newsletter March 2019
 date: 2020-02-04T13:34:39.449Z
 published: true
-description: '# Newsletter March 2019'
+description: NCEA Newsletter for March 2019.
 ---
 ![Page 1](/images/uploads/reaching-mar2019-pge1-1-.jpg "Page 1")
 
