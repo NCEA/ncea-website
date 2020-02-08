@@ -26,6 +26,7 @@ collections:
         label: "Home Page"
         name: "home"
         fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "0"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Splash", name: "splash", widget: "object", fields: [
                 {label: "Heading", name: "heading", widget: "string"},
@@ -41,6 +42,7 @@ collections:
         label: "About Page"
         name: "about"
         fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "1"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "markdown"}
           - {label: "People", name: "people", widget: "list", fields: [
@@ -53,6 +55,7 @@ collections:
         label: "Contact Page"
         name: "contact"
         fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "2"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "markdown"}
           - {label: "Blurb", name: "blurb", widget: "object", fields: [
@@ -68,4 +71,5 @@ collections:
         label: "News Page"
         name: "news"
         fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "3"}
           - {label: "Title", name: "title", widget: "string"}
