@@ -128,10 +128,6 @@ export default {
     max-width: 800px;
     width: 100%;
     overflow: hidden;
-
-    img {
-      max-width: 100%;
-    }
   }
 }
 
