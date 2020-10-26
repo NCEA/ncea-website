@@ -5,12 +5,16 @@ description: >-
   Formed in 1991 with the objective of providing a high standard of Christian
   Education in local state high schools, the NCEA now employs Elizabeth Harnwell
   to work at Hornsby Girls' High School, and Tony Jones to work at Normanhurst
-  Boys' High School. Both are employed on a part-time basis. The NCEA is
-  administered by a Management Committee representing six local churches and
-  supported by eleven churches in the area (these churches are listed with
-  details on the homepage). The annual budget is approximately $90,000.
+  Boys' High School. Both are employed on a part-time basis and teach using the
+  Youthworks Think Faith Curriculum (see below for how this looks in each
+  school). They are authorised to teach Special Religious Education (SRE) by The
+  Anglican Diocese of Sydney which is an approved provider of SRE in NSW public
+  schools.  The NCEA is administered by a Management Committee representing six
+  local churches and supported by eleven churches in the area (these churches
+  are listed with details on the homepage). The annual budget is approximately
+  $110,000.
 people:
-  - description: >-
+  - description: >
       Elizabeth Harnwell, a well qualified and experienced teacher, was
       appointed as a part-time SRE Teacher at Hornsby Girls’ High School (HGHS).
     image: /images/uploads/about/headshot_elizabeth_harnwell.png
