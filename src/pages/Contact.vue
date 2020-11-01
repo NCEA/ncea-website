@@ -3,7 +3,7 @@
     :showBox="true"
     :currentPage="parseInt($page.data.id, 10)">
     <h1>{{ $page.data.title }}</h1>
-    <p v-html="$page.data.body"/>
+    <p v-html="$page.data.content"/>
 
     <div class="columns">
 
@@ -109,7 +109,7 @@ query {
   data: contact(id: 2) {
     id
     title
-    body
+    content
     contacts {
       name
       position
