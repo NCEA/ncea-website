@@ -109,7 +109,7 @@ query {
   data: contact(id: 2) {
     id
     title
-    description
+    body
     contacts {
       name
       position

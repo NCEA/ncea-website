@@ -36,7 +36,7 @@ query {
   data: about(id: 1) {
     id
     title
-    description
+    body
     people {
       name
       description
