@@ -2,7 +2,7 @@
 id: 2
 title: Contact
 published: true
-description: "If you have a question, suggestion or complaint; please feel free to contact us using the contact form below or refer to the additional contact information for alternative contact options. For donations please refer to the information under the 'Donations' heading."
+body: "If you have a question, suggestion or complaint; please feel free to contact us using the contact form below or refer to the additional contact information for alternative contact options. For donations please refer to the information under the 'Donations' heading."
 contacts:
   - name: David Richardson
     position: Management Committee Secretary

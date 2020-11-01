@@ -1,8 +1,7 @@
 ---
 id: 1
 title: About
-description: >-
-  Formed in 1991 with the objective of providing a high standard of Christian
+body: "Formed in 1991 with the objective of providing a high standard of Christian
   Education in local state high schools, the NCEA now employs Elizabeth Harnwell
   to work at Hornsby Girls' High School, and Tony Jones to work at Normanhurst
   Boys' High School. Both are employed on a part-time basis and teach using the
@@ -15,7 +14,7 @@ description: >-
   $110,000. ([HGHS SRE Program: Think Faith
   Curriculum](https://1drv.ms/b/s!AmFI5FLNh_Zlj1yALtRJdQ6Ek2Uz), [NBHS SRE
   Program: Think Faith
-  Curriculum](https://1drv.ms/b/s!AmFI5FLNh_Zlj12JRi60E0uRMDdl?e=sG1gYC)).
+  Curriculum](https://1drv.ms/b/s!AmFI5FLNh_Zlj12JRi60E0uRMDdl?e=sG1gYC))."
 people:
   - description: >
       Elizabeth Harnwell, a well qualified and experienced teacher, was
