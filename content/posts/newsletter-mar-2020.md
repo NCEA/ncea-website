@@ -1,8 +1,8 @@
 ---
-title: Newsletter Mar 2020
+title: Newsletter March 2020
 date: 2020-11-26T14:05:18.973Z
 published: true
-description: '![]()'
+description: Newsletter March 2020
 ---
 ![](/images/uploads/image-8-11-20-at-5.14-pm.jpg)
 
