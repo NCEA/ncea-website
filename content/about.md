@@ -14,9 +14,9 @@ people:
       way to make sure I feel welcome and the Principal and the Executive have
       been very supportive.
   - description: >-
-      Tony Jones has a Bachelor of Science and is just finishing a Masters of
-      Divinity. He is a former student of James Ruse Agricultural High School
-      and currently teaches SRE part-time at Marsden High School.
+      Tony Jones has a Bachelor of Science and a Masters of Divinity. He is a
+      former selective high school student himself, and has been teaching SRE at
+      Normanhurst Boys since 2014.
     image: /images/uploads/about/headshot_tony_jones.png
     name: Tony Jones
     quote: >-
