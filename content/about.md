@@ -2,17 +2,18 @@
 id: 1
 title: About
 people:
-  - description: >
-      Elizabeth Harnwell, a well qualified and experienced teacher, was
-      appointed as a part-time SRE Teacher at Hornsby Girls’ High School (HGHS).
+  - description: >+
+      Elizabeth Harnwell, a well qualified and experienced teacher, is the
+      part-time SRE teacher at Hornsby Girls High.
+
     image: /images/uploads/about/headshot_elizabeth_harnwell.png
     name: Elizabeth Harnwell
     quote: >
-      I am so thankful to God for the opportunity to start teaching SRE at
-      Hornsby Girls’ High School (HGHS) this year. Although I am only new to the
-      school, I already feel very happy there. The staff have gone out of their
-      way to make sure I feel welcome and the Principal and the Executive have
-      been very supportive.
+      I am so thankful to God for my years teaching SRE at Hornsby Girls High
+      School. I hope to teach girls about the goodness of God, his Word, and
+      what it means to follow Him. I hope to shine a light at Hornsby Girls High
+      School so all the girls have the opportunity to meet Jesus and see that he
+      is our Lord and Saviour.
   - description: >-
       Tony Jones has a Bachelor of Science and a Masters of Divinity. He is a
       former selective high school student himself, and has been teaching SRE at
