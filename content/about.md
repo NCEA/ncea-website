@@ -43,4 +43,4 @@ HGHS SRE Program: Think Faith Curriculum:
 <https://1drv.ms/b/s!AmFI5FLNh_Zlj1yALtRJdQ6Ek2Uz>
 
 NBHS SRE Program: Think Faith Curriculum:
-<https://1drv.ms/b/s!AmFI5FLNh_Zlj12JRi60E0uRMDdl?e=sG1gYC>
+<https://1drv.ms/b/s!AmFI5FLNh_Zlj3BtkLHLtWtmntlX?e=QnUral>
