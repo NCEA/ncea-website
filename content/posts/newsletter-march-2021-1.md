@@ -10,4 +10,4 @@ description: NEWSLETTER March 2021
 
 ![](/images/uploads/screen-shot-2021-05-09-at-8.09.12-am.png)
 
-![](/images/uploads/screen-shot-2021-05-09-at-8.09.39-am.png)
+![]()
