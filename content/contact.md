@@ -13,10 +13,13 @@ contacts:
   - email: glendaleport@yahoo.com
     name: Glenys Porter
     position: Treasurer
-  - email: d_s_richardson@bigpond.com
-    name: Mailing Address
-    position: >-
-      Normanhurst Christian Education Association Inc.               PO Box
-      2061                     NORMANHURST, NSW 2076
 ---
 If you have a question, suggestion or complaint; please feel free to contact us using the contact form below or refer to the additional contact information for alternative contact options. For donations please refer to the information under the 'Donations' heading.
+
+**Mailing Address:** 
+
+**Normanhurst Christian Education Association Inc.**
+
+**PO Box 2061**
+
+**NORMANHURST, NSW 2076**
