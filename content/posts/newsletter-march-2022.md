@@ -9,3 +9,5 @@ description: Newsletter March 2022
 ![](/images/uploads/screenshot_20220427-021456_2.png)
 
 ![](/images/uploads/screenshot_20220427-021654_2.png)
+
+![](/images/uploads/screenshot_20220427-021731_2.png)
