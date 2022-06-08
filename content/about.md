@@ -3,17 +3,39 @@ id: 1
 title: About
 people:
   - description: >+
-      Elizabeth Harnwell, a well qualified and experienced teacher, is the
-      part-time SRE teacher at Hornsby Girls High.
+      Christine Chin, a well qualified and experienced teacher, is the part-time
+      SRE teacher at Hornsby Girls High.
 
-    image: /images/uploads/about/headshot_elizabeth_harnwell.png
-    name: Elizabeth Harnwell
+    image: /images/uploads/christine-chin-image.jpg
+    name: Christine Chin
     quote: >
-      I am so thankful to God for my years teaching SRE at Hornsby Girls High
-      School. I hope to teach girls about the goodness of God, his Word, and
-      what it means to follow Him. I hope to shine a light at Hornsby Girls High
-      School so all the girls have the opportunity to meet Jesus and see that he
-      is our Lord and Saviour.
+      Let me introduce myself, as I did to my students — along with their
+      responses. I attended Hornsby Girls’ High School (HGHS) in 1994 (surprised
+      looks). I was a secondary English teacher before having four kids; my
+      eldest Is currently In Year 9 at Normanhurst Boys’ High School (interested
+      looks). When I’m not at HGHS, I’m at Barker College as a Teacher Librarian
+      and Philosophy teacher. I attend Pennant Hills Baptist and enjoy running
+      to music (keen looks and many K-pop recommendations). I am Christine Chin,
+      Special religious Education teacher at Hornsby Girls’ High School.
+
+      I’m so thankful and relieved for the warm welcome by the students. They
+      each wrote me a letter and they certainly are a diverse, interesting, and
+      talented bunch. The majority are from Hindu/Buddhist/non-religious
+      backgrounds with a handful of Christians, including a number who are
+      doubting their faith. Students have been generally receptive as we’ve
+      discussed the Bible, faith and tackled some big questions, like ‘Why is
+      there suffering in the world?’
+
+      A recent highlight was from a Year 8 class. I told the Bible story of
+      Lazarus three times - once for the students to imagine, next for them to
+      remember because the last time they were invited to help me retell the
+      story. We had thoughtful questions and rich discussion as we made links
+      with Jesus’ death and resurrection.
+
+      A student commented, “I learnt that Jesus died and got resurrected. I did
+      not know he came alive after he died.” It was a powerful reminder that the
+      Bible speaks for itself, and we can have confidence that God’s word will
+      convict hearts and change lives.
   - description: >-
       Tony Jones has a Bachelor of Science and a Masters of Divinity. He is a
       former selective high school student himself, and has been teaching SRE at
