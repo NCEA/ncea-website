@@ -6,8 +6,8 @@ splash:
     name: Learn more
     url: /about
   heading: Welcome
-  largeimage: /images/uploads/ncea-homepage-background.png
-  smallimage: /images/uploads/ncea-homepage-background.png
+  largeimage: /images/uploads/ncea-homepage-faded-bg.png
+  smallimage: /images/uploads/ncea-homepage-faded-bg.png
   subheading: >-
     Students at Hornsby Girls High School and Normanhurst Boys High School have
     the opportunity to participate in Special Religious Education (formerly
