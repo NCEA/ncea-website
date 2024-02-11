@@ -1,9 +1,9 @@
 ---
 id: 2
-title: Contact
+title: Contact Us
 blurb:
   body: >-
-    To donate to the NCEA, please contact the treasurer (contact details above)
+    To donate to the NCEA, please contact the Treasurer (contact details above)
     for further details.
   heading: Donations
 contacts:
@@ -14,12 +14,14 @@ contacts:
     name: Glenys Porter
     position: Treasurer
 ---
-If you have a question, suggestion or complaint; please feel free to contact us using the contact form below or refer to the additional contact information for alternative contact options. For donations please refer to the information under the 'Donations' heading.
+We would love to hear from you.
+
+If you wish to raise a concern or complaint regarding curriculum content or teacher conduct, please get in touch. We value your input and will respond in accordance with the SRE Complaints Handling Policy.
+
+For **donations**, please contact the Treasurer (details below) for further details. 
 
 **Mailing Address:**
 
-**Normanhurst Christian Education Association Inc.**
-
-**PO Box 2061**
-
-**NORMANHURST, NSW 2076**
+**Normanhurst Christian Education Association Inc.**\
+**PO Box 2061**\
+**Normanhurst, NSW 2076**
