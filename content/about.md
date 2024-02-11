@@ -38,11 +38,11 @@ The NCEA is comprised of churches in Sydney’s Upper North Shore, each being on
 
 **Our SRE teachers**
 
-Each of our SRE Teachers have been authorised by the Anglican Diocese of Sydney or the NSW & ACT Baptist Association. They have the following requirements:
+Our SRE Teachers have been authorised by the Anglican Diocese of Sydney or the NSW & ACT Baptist Association. This includes: 
 
-* Current Working with Children Check number
-* Current church-based child protection training
-* Aware of the Department of Education’s Code of Conduct document
+* A Working with Children Check number
+* Church-based child protection training
+* Compliance with the Department of Education’s Code of Conduct 
 * Yearly training for teaching development
 * A letter of authorisation addressed to the schools and authorisation card
-* Committed to teach the approved curriculum
+* An approved teaching curriculum
