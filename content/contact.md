@@ -8,11 +8,11 @@ blurb:
   heading: Donations
 contacts:
   - email: d_s_richardson@bigpond.com
-    name: David Richardson
-    position: Management Committee Secretary
+    name: NCEA Secretary
+    position: David Richardson
   - email: glendaleport@yahoo.com
-    name: Glenys Porter
-    position: Treasurer
+    name: NCEA Treasurer
+    position: Glenys Porter
 ---
 We would love to hear from you.
 
