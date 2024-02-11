@@ -6,7 +6,7 @@ splash:
     name: Learn more
     url: /about
   heading: Welcome
-  largeimage: /images/uploads/ncea-logo.svg
+  largeimage: /images/uploads/ncea-homepage-background.png
   smallimage: /images/uploads/ncea-homepage-background.png
   subheading: We are the Normanhurst Christian Education Association.
 ---
