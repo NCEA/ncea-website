@@ -9,10 +9,7 @@ splash:
   largeimage: /images/uploads/ncea-homepage-faded-bg.png
   smallimage: /images/uploads/ncea-homepage-faded-bg.png
   subheading: >-
-    Students at Hornsby Girls High School and Normanhurst Boys High School have
-    the opportunity to participate in Special Religious Education (formerly
-    known as Scripture).  Find out more information about what this looks like
-    and how this is supported by the Normanhurst Christian Education
-    Association.
+    Find out more about Special Religious Education at Hornsby Girls and
+    Normanhurst Boys High School.
 ---
 
