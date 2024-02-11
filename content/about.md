@@ -31,8 +31,6 @@ The Normanhurst Christian Education Association (NCEA) was formed in 1991 with t
 
 The NCEA is comprised of churches in Sydney’s Upper North Shore, each being on the Department of Education’s list of approved providers.
 
-**Our SRE teachers**
-
 Our SRE Teachers have been authorised by the Anglican Diocese of Sydney or the NSW & ACT Baptist Association. This includes: 
 
 * A Working with Children Check number
