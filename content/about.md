@@ -3,7 +3,7 @@ id: 1
 title: About
 people:
   - description: >
-      Hornsby Girls High School (Wednesdays, Thursdays). Christine has a
+      Hornsby Girls High School (Wednesdays and Thursdays). Christine has a
       Bachelor of Secondary Education and has taught in various high schools
       since 2004. She is a former student of Hornsby Girls High School.
     image: /images/uploads/chris-2023.jpg
