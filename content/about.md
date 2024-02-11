@@ -6,7 +6,7 @@ people:
       Hornsby Girls High School (Wednesdays and Thursdays). Christine has a
       Bachelor of Secondary Education and has taught in various high schools
       since 2004. She is a former student of Hornsby Girls High School.
-    image: /images/uploads/chris-2023.jpg
+    image: /images/uploads/chris-2023-square.jpg
     name: Christine Chin
     quote: >
       I hope that students will question, explore and discover the good news of
@@ -18,7 +18,7 @@ people:
       Bachelor of Science and a Masters of Divinity. He is a former selective
       high school student and has been teaching SRE at Normanhurst Boys since
       2014.
-    image: /images/uploads/tony-2023.jpg
+    image: /images/uploads/tony-2023-square.jpg
     name: Tony Jones
     quote: >-
       I hope that SRE will be a chance for students to take the opportunity to
