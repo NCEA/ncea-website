@@ -2,9 +2,7 @@
 id: 2
 title: Contact Us
 blurb:
-  body: >-
-    To donate to the NCEA, please contact the Treasurer (contact details above)
-    for further details.
+  body: 'To donate to the NCEA, please contact the Treasurer.'
   heading: Donations
 contacts:
   - email: d_s_richardson@bigpond.com
