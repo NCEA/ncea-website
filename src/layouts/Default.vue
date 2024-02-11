@@ -2,23 +2,17 @@
   <div id="app">
 
     <header class="header">
-      <Menu
-        :pages="pages"
-        :currentPage="currentPage"/>
+      <Menu :pages="pages" :currentPage="currentPage"></Menu>
+      <MobileMenu :pages="pages" :currentPage="currentPage"></MobileMenu>
     </header>
 
-    <main
-      :class="{ box: showBox}"
-      tabindex="-1">
-        <slot/>
+    <main :class="{ box: showBox }" tabindex="-1">
+      <slot />
     </main>
 
     <footer class="footer">
       <div class="footer-copyright">
         <span>© {{ new Date().getFullYear() }} NCEA</span><br>
-        <span>Developed by 
-          <a href="https://natlec.com" target="_blank" rel="noopener noreferrer">Nathan Lecompte</a>
-        </span>
       </div>
       <div class="footer-admin">
         <a href="/admin" target="_blank" rel="noopener noreferrer nofollow">Go to Control Panel</a>
@@ -30,16 +24,18 @@
 
 <script>
 import Menu from '~/components/Menu.vue'
+import MobileMenu from '~/components/MobileMenu.vue'
 
 export default {
   components: {
-    Menu
+    Menu,
+    MobileMenu
   },
   props: {
     currentPage: Number,
     showBox: Boolean
   },
-  data () {
+  data() {
     return {
       pages: [
         { id: 0, url: '/', name: 'Home' },
@@ -50,7 +46,7 @@ export default {
     }
   },
   methods: {
-    goHome () {
+    goHome() {
       window.location = '/'
     }
   }

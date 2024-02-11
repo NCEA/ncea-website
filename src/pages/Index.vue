@@ -72,7 +72,9 @@ export default {
   position: relative;
   height: 250px;
   text-align: center;
-  margin: calc(50vh - (225px + 1.5em)) 1em calc(50vh - (45px + 5em));
+  padding: 0 1em;
+  margin: calc(50vh - (225px + 1.5em)) auto calc(50vh - (45px + 5em));
+  max-width: 600px;
 
   &-image {
     position: fixed;
@@ -95,8 +97,9 @@ export default {
   &-subheading {
     color: $color-neutral-light;
     font-weight: 400;
+    line-height: 1.5;
     text-transform: unset;
-    margin: .5em 0 1.5em;
+    margin: .5em 0 2em;
   }
 }
 
