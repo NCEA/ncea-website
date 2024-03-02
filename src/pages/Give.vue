@@ -3,7 +3,7 @@
 
     <h1 class="give-title">{{ $page.data.title }}</h1>
     <h2 class="give-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="pageContent"></p>
+    <p id="giving" v-html="pageContent"></p>
 
   </Layout>
 </template>
@@ -27,10 +27,9 @@ export default {
       title: this.$page.data.title
     }
   },
-  computed: {
-    pageContent() {
-      return this.$page.data.content ? this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf) : '';
-    }
+  mounted() {
+    const content = document.querySelector("#giving");
+    content.innerHTML = this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf);
   }
 }
 </script>
