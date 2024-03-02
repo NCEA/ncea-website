@@ -4,7 +4,7 @@
     :currentPage="parseInt($page.data.id, 10)">
     <h1 class="contact-title">{{ $page.data.title }}</h1>
     <h2 v-if="$page.data.subtitle" class="contact-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="$page.data.content"/>
+    <p v-html="$page.data.content"></p>
 
     <div class="columns">
 

@@ -1,11 +1,9 @@
 <template>
-  <Layout
-    :showBox="true"
-    :currentPage="parseInt($page.data.id, 10)">
+  <Layout :showBox="true" :currentPage="parseInt($page.data.id, 10)">
 
     <h1 class="give-title">{{ $page.data.title }}</h1>
     <h2 v-if="$page.data.subtitle" class="give-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="pageContent"/>
+    <p v-html="pageContent"></p>
 
   </Layout>
 </template>
@@ -31,7 +29,7 @@ export default {
   },
   computed: {
     pageContent() {
-      return this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf);
+      return this.$page.data.content ? this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf) : '';
     }
   }
 }
@@ -43,6 +41,7 @@ export default {
 .give-title {
   margin: .75em 0 .4em;
 }
+
 .give-subtitle {
   font-weight: 500;
   font-size: $font-size-h4;

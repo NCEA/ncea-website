@@ -5,7 +5,7 @@
 
     <h1 class="curriculum-title">{{ $page.data.title }}</h1>
     <h2 v-if="$page.data.subtitle" class="curriculum-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="$page.data.content"/>
+    <p v-html="$page.data.content"></p>
 
   </Layout>
 </template>
