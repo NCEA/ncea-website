@@ -6,7 +6,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 collections:
   - name: "news" # Used in routes, e.g., /admin/collections/blog
     label: "News" # Used in the UI
-    description: "Collection of all news posts on the News page of the website."
+    description: "Collection of all news posts on the News page of the website. You can choose to either create a regular markdown entry or upload a PDF file to link to directly."
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -17,6 +17,7 @@ collections:
       - {label: "Published", name: "published", widget: "boolean", default: true}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "PDF File", name: "pdf", widget: "file"}
   - name: "pages"
     label: "Pages"
     description: "Collection of all pages on the website, includes: Home page, About page, Contact page, About page & News page. For modifying news posts please refer to the 'News' collection."
@@ -57,15 +58,16 @@ collections:
         fields:
           - {label: "Id", name: "id", widget: "hidden", default: "2"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Blurb", name: "blurb", widget: "object", fields: [
-                {label: "Heading", name: "heading", widget: "string"},
-                {label: "Body", name: "body", widget: "string"}
-            ]}
           - {label: "Contacts", name: "contacts", widget: "list", fields: [
               {label: "Name", name: "name", widget: "string"},
               {label: "Position", name: "position", widget: "string"},
               {label: "Email", name: "email", widget: "string"}
+            ]}
+          - {label: "Blurb", name: "blurb", widget: "object", fields: [
+                {label: "Heading", name: "heading", widget: "string"},
+                {label: "Body", name: "body", widget: "string"}
             ]}
       - file: "content/news.md"
         label: "News Page"
@@ -73,3 +75,22 @@ collections:
         fields:
           - {label: "Id", name: "id", widget: "hidden", default: "3"}
           - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/give.md"
+        label: "Giving Page"
+        name: "give"
+        fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "1"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Donations PDF", name: "pdf", widget: "file"}
+      - file: "content/curriculum.md"
+        label: "Curriculum Page"
+        name: "curriculum"
+        fields:
+          - {label: "Id", name: "id", widget: "hidden", default: "1"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}

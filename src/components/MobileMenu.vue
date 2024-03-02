@@ -65,10 +65,6 @@ export default {
   width: calc(100% - 40px);
   z-index: 9;
 
-  &-active {
-    position: fixed;
-  }
-
   &-logo {
     position: absolute;
     background: none;
@@ -84,14 +80,14 @@ export default {
 
   &-nav {
     display: block;
-    position: fixed;
+    position: absolute;
     height: auto;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: -1.5em;
+    left: -20px;
+    right: -20px;
     background: $color-background-light;
     text-align: center;
-    box-shadow: 0 0 0 1px rgba($color-neutral-dark, .1),
+    box-shadow: 0 0 0 2px rgba($color-neutral-dark, .1),
                 0 4px 8px rgba($color-neutral-dark, .05),
                 0 8px 36px rgba($color-neutral-dark, .05);
     overflow: hidden;
@@ -104,8 +100,7 @@ export default {
     &-enter, 
     &-leave-to  {
       opacity: 0;
-      height: 0;
-      padding-top: 1em;
+      transform: translateY(-20px);
     }
 
     &-list {
@@ -119,15 +114,13 @@ export default {
       display: block;
       background: none;
       padding: 2em 2.5em;
+      font-family: $font-family-heading;
       font-size: $font-size-h5;
       font-weight: 400;
-      text-transform: uppercase;
-      border: 1px solid rgba(0, 0, 0, 0);
       box-shadow: none;
 
       &-active {
         font-weight: 700;
-        border-image: radial-gradient(rgba($color-neutral-dark, .15), rgba(0, 0, 0, 0)) 1 100%;
       }
     }
   }
@@ -140,7 +133,7 @@ export default {
     border: none;
     background: none;
     color: $color-accent-dark;
-    font: 600 $font-size-p $font-family;
+    font: 600 $font-size-p-small $font-family;
     text-transform: uppercase;
     z-index: 99;
     cursor: pointer;

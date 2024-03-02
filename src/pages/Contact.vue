@@ -2,7 +2,8 @@
   <Layout
     :showBox="true"
     :currentPage="parseInt($page.data.id, 10)">
-    <h1>{{ $page.data.title }}</h1>
+    <h1 class="contact-title">{{ $page.data.title }}</h1>
+    <h2 v-if="$page.data.subtitle" class="contact-subtitle">{{ $page.data.subtitle }}</h2>
     <p v-html="$page.data.content"/>
 
     <div class="columns">
@@ -10,7 +11,7 @@
       <div class="columns-left">
 
         <section class="contacts">
-          <h5>Contacts</h5>
+          <h4 class="contacts-heading">Contacts</h4>
           <ul class="contacts-list">
             <li
               class="contacts-list-item"
@@ -28,7 +29,7 @@
         </section>
 
         <section class="blurb">
-          <h5>{{ $page.data.blurb.heading }}</h5>
+          <h4>{{ $page.data.blurb.heading }}</h4>
           <p>{{ $page.data.blurb.body }}</p>
         </section>
 
@@ -109,6 +110,7 @@ query {
   data: contact(id: 2) {
     id
     title
+    subtitle
     content
     contacts {
       name
@@ -136,19 +138,33 @@ export default {
 <style lang="scss" scoped>
 @import '~/assets/style/_variables.scss';
 
+.contact-title {
+  margin: .75em 0 .4em;
+}
+.contact-subtitle {
+  font-weight: 500;
+  font-size: $font-size-h4;
+  color: $color-neutral-light;
+  margin: .4em 0 1.5em;
+}
+
 .columns {
   display: flex;
-  margin: 1em 0 0;
+  margin: 3em 0 0;
 
   &-left {
     max-width: 300px;
-    margin: 0 2em 0 0;
-    padding: 1em 2em 1em 0;
-    border: 1px solid rgba($color-neutral-light, .15);
-    border-width: 0 1px 0 0;
+    margin: 0 3em 0 0;
+    padding: 1em 3em 1em 0;
+    border: 2px solid rgba($color-neutral-light, .1);
+    border-width: 0 2px 0 0;
 
     .contacts {
       margin: 0 0 2em;
+
+      &-heading {
+        margin: 0 0 1em;
+      }
 
       &-list {
         list-style: none;
@@ -164,8 +180,9 @@ export default {
   &-right {
     flex: 1;
 
-    .form {
-      max-width: 500px;
+    .form,
+    #message {
+      max-width: 600px;
     }
   }
 }
@@ -176,9 +193,9 @@ export default {
     align-items: stretch;
 
     &-left {
-      border-width: 0 0 1px;
-      margin: 0 0 2em;
-      padding: 1em 0 2em;
+      border-width: 0 0 2px;
+      margin: 0 0 3em;
+      padding: 1em 0 3em;
       max-width: none;
     }
   }

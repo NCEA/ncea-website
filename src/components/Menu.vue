@@ -46,22 +46,17 @@ export default {
   display: block;
   max-width: $max-width;
   width: 100%;
-  z-index: 9;
 
   &::before {
     content: "";
     display: block;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: -1.5em;
     left: 0;
     right: 0;
     width: 100%;
     height: 150px;
-    background: linear-gradient($color-background-dark, transparent);
-  }
-
-  &-active {
-    position: fixed;
+    background: radial-gradient(farthest-corner at top, $color-background-dark, transparent);
   }
 
   &-logo {
@@ -90,11 +85,10 @@ export default {
       display: inline-block;
       position: relative;
       background: none;
-      padding: 2em 2.5em;
+      padding: 2em 1.5em;
       font-size: $font-size-h5;
+      font-family: $font-family-heading;
       font-weight: 600;
-      text-transform: uppercase;
-      border: 1px solid rgba(0, 0, 0, 0);
       box-shadow: none;
 
       &::after {
@@ -102,13 +96,20 @@ export default {
         display: block;
         width: 100%;
         height: 2px;
-        background: $color-accent-light;
+        background: transparent;
       }
 
       &-active {
 
         &::after {
-          background: currentColor;
+          background: rgba($color-accent-dark, .2);
+        }
+      }
+
+      &:hover,
+      &:focus-visible {
+        &::after {
+          background: $color-accent-dark;
         }
       }
     }

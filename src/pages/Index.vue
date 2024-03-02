@@ -14,7 +14,7 @@
           alt="Splash background">
       </picture>
       <h1 class="splash-heading">{{ $page.data.splash.heading }}</h1>
-      <h5 class="splash-subheading">{{ $page.data.splash.subheading }}</h5>
+      <p class="splash-subheading">{{ $page.data.splash.subheading }}</p>
       <a
         class="button button-primary"
         :href="$page.data.splash.button.url">
@@ -73,8 +73,8 @@ export default {
   height: 250px;
   text-align: center;
   padding: 0 1em;
-  margin: calc(50vh - (225px + 1.5em)) auto calc(50vh - (45px + 5em));
-  max-width: 600px;
+  margin: calc(50vh - (255px + 1.5em)) auto calc(50vh - (200px + 5em));
+  max-width: 700px;
 
   &-image {
     position: fixed;
@@ -85,6 +85,7 @@ export default {
     margin: auto;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     z-index: -1;
   }
 
@@ -96,6 +97,7 @@ export default {
 
   &-subheading {
     color: $color-neutral-light;
+    font-size: $font-size-h4;
     font-weight: 400;
     line-height: 1.5;
     text-transform: unset;

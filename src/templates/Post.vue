@@ -6,16 +6,15 @@
     <div class="status">
       <a
         class="status-back button"
-        href="/news">
+        href="/news"
+        title="Go back to News">
         <span class="button-icon">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
             <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
           </svg>
         </span>
-        Go back
       </a>
       <div class="status-info">
-        <p>Currently reading:</p>
         <h6>{{ $page.post.title }}</h6>
       </div>
     </div>
@@ -29,7 +28,7 @@
         <span class="post-details-meta">
           Posted {{ $page.post.date }} | 
           <template v-if="$page.post.timeToRead">
-            <strong>{{ $page.post.timeToRead }} min read.</strong>
+            <strong>{{ $page.post.timeToRead }} min read</strong>
           </template>
         </span>
       </div>
@@ -53,6 +52,7 @@ query Post ($id: ID!) {
     timeToRead
     description
     content
+    pdf
   }
   data: news(id: 3) {
     id
@@ -72,6 +72,11 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    if (this.$page.post.pdf) {
+      window.location = this.$page.post.pdf;
+    }
   }
 }
 </script>
@@ -83,29 +88,46 @@ export default {
   display: flex;
   position: sticky;
   top: 0;
-  background: $color-background-light;
+  background: rgba($color-background-light, .8);
+  backdrop-filter: blur(16px);
   align-items: center;
-  padding: 1em 0;
-  margin: 0 0 4em;
-  box-shadow: 0 1px rgba($color-neutral-light, .15);
+  padding: 1.5em 0;
+  margin: -1em -1em 4em;
+  box-shadow: 0 2px rgba($color-neutral-light, .1);
 
   &-back {
+    width: 55px;
+    height: 55px;
+    padding: 12px;
+    border-radius: 100%;
     margin: 0 1em 0 0;
+    box-shadow: none;
+
+    .button-icon {
+      margin: -1px 0 0 -1px;
+    }
+
+    .button-icon,
+    .button-icon svg {
+      width: 32px;
+      height: 32px;
+    }
+
+    &:focus,
+    &:active {
+      box-shadow: inset 0 0 0 2px $color-accent-dark,
+                  0 2px 8px rgba($color-accent-dark, .15);
+    }
   }
 
   &-info {
     margin: 0 0 0 1em;
-    padding: 0 2em 0;
-    border: 1px solid rgba($color-neutral-light, .15);
-    border-width: 0 0 0 1px;
 
-    p {
-      margin: 0;
-      font-size: $font-size-label;
-      color: $color-neutral-light;
-    }
     h6 {
       margin: 0;
+      text-transform: none;
+      font-size: $font-size-h3;
+      color: $color-accent-dark;
     }
   }
 }
@@ -115,8 +137,13 @@ export default {
 
   &-details {
 
+    &-title {
+      margin: 0 0 0.5em;
+    }
+
     &-meta {
-      font-size: $font-size-label;
+      margin: 0;
+      font-size: $font-size-p-small;
       color: $color-neutral-light;
     }
   }
@@ -134,12 +161,23 @@ export default {
 @media (max-width: 720px) {
   .status {
     position: relative;
-    margin: 0 0 2em;
+    margin: 0 0 1em;
+    padding: 1em 0;
     flex-direction: column;
     box-shadow: none;
 
     &-info {
       display: none;
+    }
+  }
+  .post-details {
+
+    &-title {
+      font-size: $font-size-h3;
+    }
+
+    &-meta {
+      font-size: $font-size-label;
     }
   }
 }

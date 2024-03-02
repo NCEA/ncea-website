@@ -6,7 +6,7 @@
     padding: 1.25em 1.5em;
     background: $color-accent-light;
     color: $color-accent-dark;
-    font: 600 $font-size-label $font-family;
+    font: 600 $font-size-label $font-family-heading;
     text-transform: uppercase;
     cursor: pointer;
     box-shadow: inset 0 0 0 2px rgba($color-accent-dark, .15);
@@ -20,7 +20,7 @@
     
     &-icon {
         display: inline-block;
-        margin: -8px 0 0;
+        margin: -2px 0 0;
         vertical-align: middle;
         overflow: hidden;
         height: 20px;
@@ -37,14 +37,14 @@
     &-primary {
         background: $color-accent-dark;
         color: $color-accent-light;
-        box-shadow: 0 2px 4px rgba($color-neutral-dark, .25);
+        box-shadow: 0 2px 4px rgba($color-neutral-dark, .25) !important;
 
         &:focus,
         &:active {
             background: $color-accent-dark;
             box-shadow: inset 0 0 0 3px $color-accent-dark,
                         inset 0 0 0 5px rgba($color-accent-light, .25),
-                        0 4px 8px rgba($color-accent-dark, .25);
+                        0 4px 8px rgba($color-accent-dark, .25) !important;
         }
 
         .button-icon {

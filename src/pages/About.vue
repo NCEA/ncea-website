@@ -2,6 +2,7 @@
   <Layout
     :showBox="true"
     :currentPage="parseInt($page.data.id, 10)">
+
     <h1>{{ $page.data.title }}</h1>
     <p v-html="$page.data.content"/>
 
@@ -61,6 +62,8 @@ export default {
 @import '~/assets/style/_variables.scss';
 
 .people {
+  margin: 3em 0 0;
+
   &-list {
     list-style: none;
     padding: 0;

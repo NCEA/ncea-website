@@ -12,7 +12,7 @@
         border-radius: 5px;
         padding: .75em 1em;
         color: $color-neutral-dark;
-        font: 400 $font-size-p $font-family;
+        font: 400 $font-size-p-small $font-family;
         box-shadow: 0 0 0 1px rgba($color-neutral-light, .5),
                     0 2px 4px rgba($color-neutral-dark, .15);
 
@@ -30,9 +30,8 @@
 
     .label {
         display: block;
-        text-transform: uppercase;
         color: $color-neutral-light;
-        font: 600 $font-size-label $font-family;
+        font: 500 $font-size-label $font-family;
         margin: 1em 0 .5em;
 
        &:focus,

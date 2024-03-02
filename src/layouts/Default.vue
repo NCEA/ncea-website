@@ -70,6 +70,11 @@ export default {
   padding: 2.5em 0;
   margin: 2.5em 1em;
   text-align: center;
-  border-top: 1px solid rgba($color-neutral-light, .15);
+}
+
+@media (max-width: 720px) {
+  .header {
+    margin: 1.5em 20px 2.5em;
+  }
 }
 </style>

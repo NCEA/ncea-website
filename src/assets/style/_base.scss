@@ -9,7 +9,7 @@ body {
     padding: 0;
     background: $color-background-dark;
     color: $color-neutral-dark;
-    font: 400 $font-size-p $font-family;
+    font: 400 $font-size-p-large $font-family;
     line-height: 1.25;
     max-width: $max-width;
 }
@@ -22,48 +22,64 @@ h1 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h1;
-    text-transform: uppercase;
-    margin: .75em 0;
+    font-family: $font-family-heading;
+    margin: .75em 0 .5em;
 }
+
 h2 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h2;
-    text-transform: uppercase;
-    margin: 1em 0;
+    font-family: $font-family-heading;
+    margin: 1em 0 .75em;
 }
+
 h3 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h3;
-    text-transform: uppercase;
-    margin: 1em 0;
+    font-family: $font-family-heading;
+    margin: 1em 0 .75em;
 }
+
 h4 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h4;
-    text-transform: uppercase;
-    margin: 1em 0;
+    font-family: $font-family-heading;
+    margin: 1em 0 .75em;
 }
+
 h5 {
     color: $color-accent-dark;
     font-weight: 600;
     font-size: $font-size-h5;
-    text-transform: uppercase;
-    margin: .75em 0;
+    font-family: $font-family-heading;
+    margin: .75em 0 .5em;
 }
+
 h6 {
     color: $color-neutral-light;
     font-weight: 600;
     font-size: $font-size-h6;
     text-transform: uppercase;
-    margin: .5em 0;
+    font-family: $font-family-heading;
+    margin: .5em 0 .25em;
 }
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+    display: none;
+}
+
 p {
     line-height: 1.5;
     font-weight: 400;
-    font-size: $font-size-p;
+    font-size: $font-size-p-large;
     margin: .5em 0;
 }
 
@@ -77,10 +93,20 @@ blockquote {
     padding: 1em 1.25em;
     border-left: 4px solid $color-accent-dark;
     color: $color-neutral-dark;
-    font: 400 $font-size-p $font-family;
+    font: 400 $font-size-p-small $font-family;
     background: no-repeat top left url('/images/uploads/quote.svg'),
-                $color-accent-light;
+        $color-accent-light;
     background-size: 48px;
+}
+
+pre {
+    padding: 1.5em 2em;
+    background: rgba($color-neutral-light, .1);
+    border-radius: 8px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: $font-family-code;
 }
 
 a {
@@ -89,18 +115,22 @@ a {
     font-weight: 600;
     text-decoration: none;
     padding: 0 2px;
-    box-shadow: 0 1px $color-accent-light;
+    box-shadow: 0 2px rgba($color-neutral-dark, .1);
 
     &:focus,
     &:active {
         background: $color-accent-light;
         box-shadow: 0 2px $color-accent-dark;
     }
+
+    &:hover {
+        box-shadow: 0 2px $color-accent-dark;
+    }
 }
 
 hr {
-    height: 1px;
-    background: rgba($color-neutral-light, .15);
+    height: 2px;
+    background: rgba($color-neutral-light, .1);
     border: none;
 }
 
