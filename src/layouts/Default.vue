@@ -41,8 +41,8 @@ export default {
         { id: 0, url: '/', name: 'Home' },
         { id: 1, url: '/about', name: 'About' },
         { id: 2, url: '/contact', name: 'Contact' },
-        { id: 3, url: '/news', name: 'News' },
         { id: 5, url: '/curriculum', name: 'Curriculum' },
+        { id: 3, url: '/news', name: 'News' },
         { id: 4, url: '/give', name: 'Give' },
       ]
     }
