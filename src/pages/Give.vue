@@ -2,7 +2,7 @@
   <Layout :showBox="true" :currentPage="parseInt($page.data.id, 10)">
 
     <h1 class="give-title">{{ $page.data.title }}</h1>
-    <h2 v-if="$page.data.subtitle" class="give-subtitle">{{ $page.data.subtitle }}</h2>
+    <h2 class="give-subtitle">{{ $page.data.subtitle }}</h2>
     <p v-html="pageContent"></p>
 
   </Layout>
