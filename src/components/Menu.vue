@@ -2,24 +2,18 @@
   <div class="menu">
 
     <a class="menu-logo" href="/">
-      <img
-        class="menu-logo-image"
-        src="/images/uploads/ncea-logo.svg"
-        alt="NCEA">
+      <img class="menu-logo-image" src="/images/uploads/ncea-logo.svg" alt="NCEA">
     </a>
 
-      <div
-        class="menu-nav">
-        <nav class="menu-nav-list">
-          <a
-            v-for="item in pages"
-            :key="item.id"
-            :class="['menu-nav-item', { 'menu-nav-item-active': item.id === currentPage}]"
-            :href="item.url">
-            {{ item.name }}
-          </a>
-        </nav>
-      </div>
+    <div class="menu-nav">
+      <nav class="menu-nav-list">
+        <a v-for="item in pages" :key="item.id"
+          :class="['menu-nav-item', { 'menu-nav-item-active': item.id === currentPage }, { 'menu-nav-item-cta': item.name === 'Give' }]"
+          :href="item.url">
+          {{ item.name }}
+        </a>
+      </nav>
+    </div>
 
   </div>
 </template>
@@ -100,7 +94,6 @@ export default {
       }
 
       &-active {
-
         &::after {
           background: rgba($color-accent-dark, .2);
         }
@@ -112,6 +105,44 @@ export default {
           background: $color-accent-dark;
         }
       }
+
+      &-cta {
+        margin-left: 1em;
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 100%;
+          height: 50px;
+          left: -2px;
+          top: 21px;
+          border-radius: 12px;
+          border: 2px solid rgba($color-accent-dark, .2);
+          z-index: 0;
+        }
+
+        &::after {
+          background: transparent;
+        }
+
+        &:hover,
+        &:focus-visible {
+          &::before {
+            background: rgba($color-accent-dark, .1);
+          }
+
+          &::after {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-nav-item-active.menu-nav-item-cta {
+    &::before {
+      background: rgba($color-accent-dark, .1);
     }
   }
 }
