@@ -1,6 +1,5 @@
 <template>
-  <component :is="post.pdf ? 'a' : 'g-link'" class="post-card" :href="post.pdf ? post.pdf : ''"
-    :to="post.pdf ? post.pdf : post.path">
+  <a class="post-card" :href="post.pdf ? post.pdf : post.path">
 
     <h4 class="post-card-title" v-html="post.title" />
 
@@ -16,7 +15,7 @@
 
     <p class="post-card-description" v-html="post.description" />
 
-  </component>
+  </a>
 </template>
 
 <script>
