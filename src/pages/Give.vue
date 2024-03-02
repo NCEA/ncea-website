@@ -3,7 +3,7 @@
 
     <h1 class="give-title">{{ $page.data.title }}</h1>
     <h2 class="give-subtitle">{{ $page.data.subtitle }}</h2>
-    <p id="giving" v-html="pageContent"></p>
+    <div id="giving" v-html="$page.data.content"></div>
 
   </Layout>
 </template>

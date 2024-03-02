@@ -4,7 +4,7 @@
     :currentPage="parseInt($page.data.id, 10)">
 
     <h1>{{ $page.data.title }}</h1>
-    <p v-html="$page.data.content"/>
+    <div v-html="$page.data.content"></div>
 
     <section class="people">
       <ul class="people-list">

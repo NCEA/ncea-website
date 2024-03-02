@@ -5,7 +5,7 @@
 
     <h1 class="news-title">{{ $page.data.title }}</h1>
     <h2 class="news-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="$page.data.content"></p>
+    <div v-html="$page.data.content"></div>
 
     <hr class="posts-divider" />
 

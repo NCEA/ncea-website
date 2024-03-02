@@ -5,7 +5,7 @@
 
     <h1 class="curriculum-title">{{ $page.data.title }}</h1>
     <h2 class="curriculum-subtitle">{{ $page.data.subtitle }}</h2>
-    <p v-html="$page.data.content"></p>
+    <div v-html="$page.data.content"></div>
 
   </Layout>
 </template>
