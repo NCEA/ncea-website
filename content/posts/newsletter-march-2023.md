@@ -1,8 +1,8 @@
 ---
-title: Newsletter March 2023
+title: March 2023
 date: 2023-05-07T13:47:42.317Z
 published: true
-description: Newsletter March 2023
+description: Reaching Newsletter March 2023
 pdf: /images/uploads/ncea-reaching-march-2023.pdf
-pdfDirectLink: true
 ---
+"Do you think I will be biased as I talk about religion?" Hear about how Tony's students respond and find out what Christine's two favourite quotes from students were.
