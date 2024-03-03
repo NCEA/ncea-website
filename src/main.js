@@ -4,8 +4,24 @@ import '~/assets/style/index.scss'
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '~/layouts/Default.vue'
 
+// Import progress bar
+import NProgress from "nprogress";
+
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, { router, head, isClient }) {
+
+  // Show progress bar when changing routes
+  router.beforeEach((to, from, next) => {
+      if (!to.hash && typeof document !== "undefined") {
+          NProgress.start()
+      }
+      next()
+  })
+  router.afterEach((to, from) => {
+      if (!to.hash && typeof document !== "undefined") {
+          NProgress.done()
+      }
+  })
 
   // Add external Javascript before the closing </body> tag
   head.script.push({
@@ -22,7 +38,7 @@ export default function (Vue, { router, head, isClient }) {
     name: 'keywords',
     content: 'NCEA, Normanhurst, Australia, Christian, Education, Association, religious, school, strategic, challenging, life, jesus, God, students'
   })
-  
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
 }
