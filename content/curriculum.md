@@ -11,6 +11,8 @@ The curriculum encourages students to explore the basics of the Christian faith 
 
 #### Hornsby Girls High School
 
+The SRE curriculum for Hornsby Girls High School is [available here](#HGHS_CURRICULUM).
+
 SRE occurs on Wednesdays and Thursdays during timetabled lessons. There are three lessons per term for Years 7-9 and two lessons per year for Year 10. 
 
 #### Normanhurst Boys High School
