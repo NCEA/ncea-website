@@ -2,7 +2,7 @@
 id: 5
 title: Curriculum
 subtitle: An overview of what is taught.
-HGHSpdf: /images/uploads/nbhs-sre-curriculum.pdf
+HGHSpdf: /images/uploads/hghs-sre-curriculum.pdf
 NBHSpdf: /images/uploads/nbhs-sre-curriculum.pdf
 ---
 Our SRE teachers teach from the curriculum authorised by the Anglican Diocese of Sydney and the Baptist Association of NSW & ACT. More information about the SRE curriculum is [available here](https://whysre.com.au/sre-curriculum/cep-curriculum-overview/). 
@@ -17,6 +17,6 @@ SRE occurs on Wednesdays and Thursdays during timetabled lessons. There are thre
 
 #### Normanhurst Boys High School
 
-The SRE curriculum for **Normanhurst Boys High School** is [available here](#NBHS_CURRICULUM).
+The SRE curriculum for Normanhurst Boys High School is [available here](#NBHS_CURRICULUM).
 
 SRE occurs on Mondays, Tuesdays, and Fridays during timetabled lessons. There are fortnightly lessons per term for Years 7-10. Students receive their SRE timetable at the beginning of each term.
