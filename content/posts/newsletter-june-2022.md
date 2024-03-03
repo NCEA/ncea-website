@@ -1,11 +1,8 @@
 ---
-title: Newsletter June 2022
+title: June 2022
 date: 2022-06-08T07:32:26.567Z
 published: true
-description: 'Newsletter June 2022'
+description: Reaching Newsletter June 2022
+pdf: /images/uploads/june-reaching-2022.pdf
 ---
-![](/images/uploads/reaching-june-2022_1.png)
-
-![](/images/uploads/reaching-june-2022-2.png)
-
-![](/images/uploads/reaching-june-2022-3.png)
+Tony asks his year 10 students, 'Why do we pray?' and Christine introduces a new class pet.
