@@ -3,12 +3,10 @@ id: 1
 title: About
 people:
   - description: >
-      Hornsby Girls High School (Wednesdays and Thursdays).
-
-
-      Christine has a Bachelor of Secondary Education and has taught in various
-      high schools since 2004. She is a former student of Hornsby Girls High
-      School.
+      Christine teaches SRE at Hornsby Girls High School on Wednesdays and
+      Thursdays. She has a Bachelor of Secondary Education and has taught in
+      various high schools since 2004. She is a former student of Hornsby Girls
+      High School.
     image: /images/uploads/chris-2023-square.jpg
     name: Christine Chin
     quote: >
@@ -17,12 +15,10 @@ people:
       journey, I pray that SRE will help them to move one step (or more!) closer
       to knowing Jesus.
   - description: >-
-      Normanhurst Boys High School (Mondays, Tuesdays, and Fridays).
-
-
-      Tony has a Bachelor of Science and a Masters of Divinity. He is a former
-      selective high school student and has been teaching SRE at Normanhurst
-      Boys since 2014.
+      Tony teaches SRE at Normanhurst Boys High School on Mondays, Tuesdays, and
+      Fridays. He has a Bachelor of Science and a Masters of Divinity. He is a
+      former selective high school student and has been teaching SRE at
+      Normanhurst Boys since 2014.
     image: /images/uploads/tony-2023-square.jpg
     name: Tony Jones
     quote: >-
