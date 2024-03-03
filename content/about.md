@@ -43,4 +43,3 @@ Our SRE Teachers have been authorised by the Anglican Diocese of Sydney or the N
 * Compliance with the Department of Education’s Code of Conduct 
 * Yearly training for teaching development
 * A letter of authorisation addressed to the schools and authorisation card
-* An approved teaching curriculum - [Think Faith](https://thinkfaith.com.au/files/About_Think_Faith.pdf)
