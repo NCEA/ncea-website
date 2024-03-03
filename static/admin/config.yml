@@ -81,7 +81,7 @@ collections:
         label: "Giving Page"
         name: "give"
         fields:
-          - {label: "Id", name: "id", widget: "hidden", default: "1"}
+          - {label: "Id", name: "id", widget: "hidden", default: "4"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
@@ -90,7 +90,9 @@ collections:
         label: "Curriculum Page"
         name: "curriculum"
         fields:
-          - {label: "Id", name: "id", widget: "hidden", default: "1"}
+          - {label: "Id", name: "id", widget: "hidden", default: "5"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Curriculum PDF (Hornsby Girls High School)", name: "HGHSpdf", widget: "file"}
+          - {label: "Curriculum PDF (Normanhurst Boys High School)", name: "NBHSpdf", widget: "file"}

@@ -5,7 +5,7 @@
 
     <h1 class="curriculum-title">{{ $page.data.title }}</h1>
     <h2 class="curriculum-subtitle">{{ $page.data.subtitle }}</h2>
-    <div v-html="$page.data.content"></div>
+    <div v-html="pageContent"></div>
 
   </Layout>
 </template>
@@ -16,6 +16,8 @@ query {
     id
     title
     subtitle
+    HGHSpdf
+    NBHSpdf
     content
   }
 }
@@ -23,6 +25,15 @@ query {
 
 <script>
 export default {
+  computed: {
+    pageContent() {
+      return this.$page.data.content
+        ? this.$page.data.content
+          .replaceAll("#NBHS_CURRICULUM", this.$page.data.NBHSpdf)
+          .replaceAll("#HGHS_CURRICULUM", this.$page.data.HGHSpdf)
+        : "";
+    }
+  },
   metaInfo() {
     return {
       title: this.$page.data.title
