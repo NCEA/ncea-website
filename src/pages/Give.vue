@@ -29,7 +29,9 @@ export default {
   },
   mounted() {
     const content = document.querySelector("#giving");
-    content.innerHTML = this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf);
+    if (this.$page.data.content) {
+      content.innerHTML = this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf);
+    }
   }
 }
 </script>
