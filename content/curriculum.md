@@ -15,6 +15,8 @@ SRE occurs on Wednesdays and Thursdays during timetabled lessons. There are thre
 
 #### Normanhurst Boys High School
 
-The SRE curriculum for **Normanhurst Boys High School** is [available here](/images/uploads/nbhs-sre-curriculum.pdf).
+The SRE curriculum for **Normanhurst Boys High School** is 
+
+![](/images/uploads/nbhs-sre-program-1.jpg)
 
 SRE occurs on Mondays, Tuesdays, and Fridays during timetabled lessons. There are fortnightly lessons per term for Years 7-10. Students receive their SRE timetable at the beginning of each term.
