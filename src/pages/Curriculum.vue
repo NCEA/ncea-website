@@ -29,8 +29,8 @@ export default {
     pageContent() {
       return this.$page.data.content
         ? this.$page.data.content
-          .replaceAll("#NBHS_CURRICULUM", this.$page.data.NBHSpdf)
-          .replaceAll("#HGHS_CURRICULUM", this.$page.data.HGHSpdf)
+          .replace(/#NBHS_CURRICULUM/g, this.$page.data.NBHSpdf)
+          .replace(/#HGHS_CURRICULUM/g, this.$page.data.HGHSpdf)
         : "";
     }
   },

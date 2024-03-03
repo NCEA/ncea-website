@@ -25,7 +25,7 @@ export default {
   computed: {
     pageContent() {
       return this.$page.data.content 
-        ? this.$page.data.content.replaceAll("#DONATE_FORM", this.$page.data.pdf)
+        ? this.$page.data.content.replace(/#DONATE_FORM/g, this.$page.data.pdf)
         : "";
     }
   },
