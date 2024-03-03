@@ -5,7 +5,7 @@ subtitle: An overview of what is taught.
 HGHSpdf: /images/uploads/hghs-sre-curriculum.pdf
 NBHSpdf: /images/uploads/nbhs-sre-curriculum.pdf
 ---
-Our SRE teachers teach from the curriculum authorised by the Anglican Diocese of Sydney and the Baptist Association of NSW & ACT. More information about the SRE curriculum is [available here](https://whysre.com.au/sre-curriculum/cep-curriculum-overview/). 
+Our SRE teachers teach from the curriculum authorised by the [Anglican Diocese of Sydney](https://whysre.com.au/sre-curriculum/cep-curriculum-overview/) and the [Baptist Association of NSW & ACT](https://nswactbaptists.org.au/authorised-sre-curriculum/). 
 
 The curriculum encourages students to explore the basics of the Christian faith from the Bible and how it applies to life today. Students are given the opportunity to raise questions and to discuss faith, identity, purpose, values and worldviews in a safe and supportive learning environment. Topics are selected, and lessons prepared, with great care to reflect the different religious backgrounds, faiths of students and the selective nature of the schools.
 
