@@ -29,7 +29,7 @@ export default {
   },
   mounted() {
     const content = document.querySelector("#giving");
-    if (this.$page.data.content) {
+    if (this.$page.data.content !== null && this.$page.data.content !== undefined) {
       content.innerHTML = this.$page.data.content.replace("#DONATE_FORM", this.$page.data.pdf);
     }
   }
