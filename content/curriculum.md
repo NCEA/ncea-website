@@ -2,7 +2,7 @@
 id: 5
 title: Curriculum
 subtitle: An overview of what is taught.
-HGHSpdf: /images/uploads/hghs-sre-curriculum.docx.pdf
+HGHSpdf: /images/uploads/hghs-sre-curriculum.pdf
 NBHSpdf: /images/uploads/nbhs-sre-curriculum.pdf
 ---
 Our SRE teachers teach from the curriculum authorised by the [Anglican Diocese of Sydney](https://whysre.com.au/sre-curriculum/cep-curriculum-overview/) and the [Baptist Association of NSW & ACT](https://nswactbaptists.org.au/authorised-sre-curriculum/). 
