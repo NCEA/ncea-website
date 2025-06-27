@@ -65,9 +65,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .splash {
   position: relative;
   height: 250px;
@@ -75,34 +73,31 @@ export default {
   padding: 0 1em;
   margin: calc(50vh - (255px + 1.5em)) auto calc(50vh - (200px + 5em));
   max-width: 700px;
-
-  &-image {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-
-  &-heading {
-    font-size: 5.202em;
-    text-transform: unset;
-    margin: 0;
-  }
-
-  &-subheading {
-    color: $color-neutral-light;
-    font-size: $font-size-h4;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: unset;
-    margin: .5em 0 2em;
-  }
+}
+.splash-image {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.splash-heading {
+  font-size: 5.202em;
+  text-transform: unset;
+  margin: 0;
+}
+.splash-subheading {
+  color: var(--color-neutral-light);
+  font-size: var(--font-size-h4);
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: unset;
+  margin: .5em 0 2em;
 }
 
 @media (max-width: 900px) {

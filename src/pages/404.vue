@@ -24,7 +24,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .error {
   display: block;
   max-width: 400px;

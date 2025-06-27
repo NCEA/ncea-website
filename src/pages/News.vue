@@ -50,7 +50,7 @@ query {
 </page-query>
 
 <script>
-import PostCard from '~/components/PostCard.vue'
+import PostCard from '~/components/PostCard.vue';
 
 export default {
   components: {
@@ -64,16 +64,14 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .news-title {
   margin: .75em 0 .4em;
 }
 .news-subtitle {
   font-weight: 500;
-  font-size: $font-size-h4;
-  color: $color-neutral-light;
+  font-size: var(--font-size-h4);
+  color: var(--color-neutral-light);
   margin: .4em 0 1.5em;
 }
 .posts {

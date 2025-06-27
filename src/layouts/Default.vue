@@ -23,8 +23,8 @@
 </template>
 
 <script>
-import Menu from '~/components/Menu.vue'
-import MobileMenu from '~/components/MobileMenu.vue'
+import Menu from '~/components/Menu.vue';
+import MobileMenu from '~/components/MobileMenu.vue';
 
 export default {
   components: {
@@ -55,9 +55,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .header {
   position: relative;
   height: 100px;
@@ -66,8 +64,8 @@ export default {
 
 .footer {
   height: 150px;
-  font-size: $font-size-label;
-  color: $color-neutral-light;
+  font-size: var(--font-size-label);
+  color: var(--color-neutral-light);
   line-height: 1.5;
   padding: 2.5em 0;
   margin: 2.5em 1em;

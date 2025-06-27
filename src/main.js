@@ -1,8 +1,14 @@
 // Import main css
-import '~/assets/style/index.scss'
+import '~/assets/style/_variables.css';
+import '~/assets/style/_progress.css';
+import '~/assets/style/_fonts.css';
+import '~/assets/style/_base.css';
+import '~/assets/style/_box.css';
+import '~/assets/style/_forms.css';
+import '~/assets/style/_buttons.css';
 
 // Import default layout so we don't need to import it to every page
-import DefaultLayout from '~/layouts/Default.vue'
+import DefaultLayout from '~/layouts/Default.vue';
 
 // Import progress bar
 import NProgress from "nprogress";

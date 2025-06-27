@@ -56,121 +56,104 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .mobile-menu {
   display: block;
-  max-width: $max-width - 40px;
+  max-width: calc(var(--max-width) - 40px);
   width: calc(100% - 40px);
   z-index: 9;
-
-  &-logo {
-    position: absolute;
-    background: none;
-    box-shadow: none;
-    z-index: 99;
-    cursor: pointer;
-
-    &-image {
-      height: 70px;
-      margin: 10px 0;
-    }
-  }
-
-  &-nav {
-    display: block;
-    position: absolute;
-    height: auto;
-    top: -1.5em;
-    left: -20px;
-    right: -20px;
-    background: $color-background-light;
-    text-align: center;
-    box-shadow: 0 0 0 2px rgba($color-neutral-dark, .1),
-                0 4px 8px rgba($color-neutral-dark, .05),
-                0 8px 36px rgba($color-neutral-dark, .05);
-    overflow: hidden;
-    z-index: 9;
-
-    &-enter-active, 
-    &-leave-active {
-      transition: .2s ease;
-    }
-    &-enter, 
-    &-leave-to  {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-
-    &-list {
-      display: inline-block;
-      width: 100%;
-      max-width: $max-width;
-      margin: 140px 0 1em;
-    }
-
-    &-item {
-      display: block;
-      background: none;
-      padding: 2em 2.5em;
-      font-family: $font-family-heading;
-      font-size: $font-size-h5;
-      font-weight: 400;
-      box-shadow: none;
-
-      &-active {
-        font-weight: 700;
-      }
-    }
-  }
-
-  &-toggle {
-    position: absolute;
-    outline: none;
-    right: 0;
-    padding: 2em 3em 2em 2em;
-    border: none;
-    background: none;
-    color: $color-accent-dark;
-    font: 600 $font-size-p-small $font-family;
-    text-transform: uppercase;
-    z-index: 99;
-    cursor: pointer;
-
-    &::before,
-    &::after {
-      display: block;
-      position: absolute;
-      content: '';
-      width: 30px;
-      height: 2.5px;
-      right: 0;
-      border-radius: 2px;
-      background: $color-accent-dark;
-      transition: .2s ease;
-    }
-
-    &::before {
-      margin: 2px 0 0;
-    }
-
-    &::after {
-      margin: -4px 0 0;
-    }
-  }
-
-  &-toggle-active {
-    &::before {
-      transform: rotate(45deg);
-      margin: 10.5px 0 0;
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-      margin: -11.5px 0 0;
-    }
-  }
+}
+.mobile-menu-logo {
+  position: absolute;
+  background: none;
+  box-shadow: none;
+  z-index: 99;
+  cursor: pointer;
+}
+.mobile-menu-logo-image {
+  height: 70px;
+  margin: 10px 0;
+}
+.mobile-menu-nav {
+  display: block;
+  position: absolute;
+  height: auto;
+  top: -1.5em;
+  left: -20px;
+  right: -20px;
+  background: var(--color-background-light);
+  text-align: center;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-neutral-dark) 10%, transparent),
+              0 4px 8px color-mix(in srgb, var(--color-neutral-dark) 5%, transparent),
+              0 8px 36px color-mix(in srgb, var(--color-neutral-dark) 5%, transparent);
+  overflow: hidden;
+  z-index: 9;
+}
+.mobile-menu-nav-enter-active, 
+.mobile-menu-nav-leave-active {
+  transition: .2s ease;
+}
+.mobile-menu-nav-enter, 
+.mobile-menu-nav-leave-to  {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+.mobile-menu-nav-list {
+  display: inline-block;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 140px 0 1em;
+}
+.mobile-menu-nav-item {
+  display: block;
+  background: none;
+  padding: 2em 2.5em;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-h5);
+  font-weight: 400;
+  box-shadow: none;
+}
+.mobile-menu-nav-item-active {
+  font-weight: 700;
+}
+.mobile-menu-toggle {
+  position: absolute;
+  outline: none;
+  right: 0;
+  padding: 2em 3em 2em 2em;
+  border: none;
+  background: none;
+  color: var(--color-accent-dark);
+  font: 600 var(--font-size-p-small) var(--font-family);
+  text-transform: uppercase;
+  z-index: 99;
+  cursor: pointer;
+}
+.mobile-menu-toggle::before,
+.mobile-menu-toggle::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 30px;
+  height: 2.5px;
+  right: 0;
+  border-radius: 2px;
+  background: var(--color-accent-dark);
+  transition: .2s ease;
+}
+.mobile-menu-toggle::before {
+  margin: 2px 0 0;
+}
+.mobile-menu-toggle::after {
+  margin: -4px 0 0;
+}
+.mobile-menu-toggle-active::before {
+  transform: rotate(45deg);
+  margin: 10.5px 0 0;
+}
+.mobile-menu-toggle-active::after {
+  transform: rotate(-45deg);
+  margin: -11.5px 0 0;
 }
 
 @media (min-width: 960px) {

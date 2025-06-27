@@ -1,0 +1,39 @@
+.form-group {
+    margin: 1.5em 0;
+}
+
+.form .input {
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: var(--color-background-light);
+    border: none;
+    border-radius: 6px;
+    padding: .75em 1em;
+    color: var(--color-neutral-dark);
+    font: 400 var(--font-size-p-small) var(--font-family);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-neutral-light) 50%, transparent),
+                0 2px 4px color-mix(in srgb, var(--color-neutral-dark) 15%, transparent);
+
+}
+.form .input:focus,
+.form .input:active {
+    box-shadow: 0 0 0 3px var(--color-accent-dark),
+                0 4px 8px color-mix(in srgb, var(--color-accent-dark) 25%, transparent);
+}
+.form .input-error {
+    box-shadow: 0 0 0 3px var(--color-error-dark),
+                0 4px 8px var(--color-error-light);
+}
+
+.form .label {
+    display: block;
+    color: var(--color-neutral-light);
+    font: 500 var(--font-size-label) var(--font-family);
+    margin: 1em 0 .5em;
+}
+.form .label:focus,
+.form .label:active,
+.form .label-focused {
+    color: var(--color-accent-dark);
+}

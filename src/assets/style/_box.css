@@ -1,9 +1,9 @@
 .box {
-    background: $color-background-light;
+    background: var(--color-background-light);
     margin: 1em;
     padding: 1em 3em 2em;
     border-radius: 12px;
-    box-shadow: 0 2px 4px rgba($color-neutral-dark, .1);
+    box-shadow: 0 2px 4px color-mix(in srgb, var(--color-neutral-dark) 10%, transparent);
 }
 
 @media (max-width: 720px) {

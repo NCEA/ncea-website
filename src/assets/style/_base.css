@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background: var(--color-background-dark);
+    color: var(--color-neutral-dark);
+    font: 400 var(--font-size-p-large) var(--font-family);
+    line-height: 1.25;
+    max-width: var(--max-width);
+}
+
+main {
+    outline: none;
+}
+
+h1 {
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    font-size: var(--font-size-h1);
+    font-family: var(--font-family-heading);
+    margin: .75em 0 .5em;
+}
+
+h2 {
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    font-size: var(--font-size-h2);
+    font-family: var(--font-family-heading);
+    margin: 1em 0 .75em;
+}
+
+h3 {
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    font-size: var(--font-size-h3);
+    font-family: var(--font-family-heading);
+    margin: 1em 0 .75em;
+}
+
+h4 {
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    font-size: var(--font-size-h4);
+    font-family: var(--font-family-heading);
+    margin: 1em 0 .75em;
+}
+
+h5 {
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    font-size: var(--font-size-h5);
+    font-family: var(--font-family-heading);
+    margin: .75em 0 .5em;
+}
+
+h6 {
+    color: var(--color-neutral-light);
+    font-weight: 600;
+    font-size: var(--font-size-h6);
+    text-transform: uppercase;
+    font-family: var(--font-family-heading);
+    margin: .5em 0 .25em;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+    display: none;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: var(--font-size-p-large);
+    margin: .5em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+blockquote {
+    display: inline-block;
+    margin: 0 .25em;
+    padding: 1em 1.25em;
+    border-left: 4px solid var(--color-accent-dark);
+    color: var(--color-neutral-dark);
+    font: 400 var(--font-size-p-small) var(--font-family);
+    background: no-repeat top left url('/images/uploads/quote.svg'),
+        var(--color-accent-light);
+    background-size: 48px;
+}
+
+pre {
+    padding: 1.5em 2em;
+    background: color-mix(in srgb, var(--color-neutral-light) 10%, transparent);
+    border-radius: 8px;
+    white-space: pre-wrap;
+}
+code {
+    font-family: var(--font-family-code);
+}
+
+a {
+    outline: none;
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 2px;
+    box-shadow: 0 2px color-mix(in srgb, var(--color-neutral-dark) 10%, transparent);
+
+}
+a:focus,
+a:active {
+    background: var(--color-accent-light);
+    box-shadow: 0 2px var(--color-accent-dark);
+}
+a:hover {
+    box-shadow: 0 2px var(--color-accent-dark);
+}
+
+hr {
+    height: 2px;
+    background: color-mix(in srgb, var(--color-neutral-light) 10%, transparent);
+    border: none;
+}
+
+ul, ol {
+    line-height: 2;
+}
+
+.icon-link {
+    content: '#';
+    font-weight: 600;
+    font-size: inherit;
+    color: var(--color-neutral-light);
+    padding: .15em;
+}

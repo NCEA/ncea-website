@@ -81,81 +81,67 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .status {
   display: flex;
   position: sticky;
   top: 0;
-  background: rgba($color-background-light, .8);
+  background: color-mix(in srgb, var(--color-background-light) 80%, transparent);
   backdrop-filter: blur(16px);
   align-items: center;
   padding: 1.5em 0;
   margin: -1em -1em 4em;
-  box-shadow: 0 2px rgba($color-neutral-light, .1);
-
-  &-back {
-    width: 55px;
-    height: 55px;
-    padding: 12px;
-    border-radius: 100%;
-    margin: 0 1em 0 0;
-    box-shadow: none;
-
-    .button-icon {
-      margin: -1px 0 0 -1px;
-    }
-
-    .button-icon,
-    .button-icon svg {
-      width: 32px;
-      height: 32px;
-    }
-
-    &:focus,
-    &:active {
-      box-shadow: inset 0 0 0 2px $color-accent-dark,
-                  0 2px 8px rgba($color-accent-dark, .15);
-    }
-  }
-
-  &-info {
-    margin: 0 0 0 1em;
-
-    h6 {
-      margin: 0;
-      text-transform: none;
-      font-size: $font-size-h3;
-      color: $color-accent-dark;
-    }
-  }
+  box-shadow: 0 2px color-mix(in srgb, var(--color-neutral-light) 10%, transparent);
 }
+.status-back {
+  width: 55px;
+  height: 55px;
+  padding: 12px;
+  border-radius: 100%;
+  margin: 0 1em 0 0;
+  box-shadow: none;
 
+}
+.status-back .button-icon {
+  margin: -1px 0 0 -1px;
+}
+.status-back .button-icon,
+.status-back .button-icon svg {
+  width: 32px;
+  height: 32px;
+}
+.status-back:focus,
+.status-back :active {
+  box-shadow: inset 0 0 0 2px var(--color-accent-dark),
+              0 2px 8px color-mix(in srgb, var(--color-accent-dark) 15%, transparent);
+}
+.status-info {
+  margin: 0 0 0 1em;
+}
+.status-info h6 {
+  margin: 0;
+  text-transform: none;
+  font-size: var(--font-size-h3);
+  color: var(--color-accent-dark);
+}
 .post {
   text-align: center;
-
-  &-details {
-
-    &-title {
-      margin: 0 0 0.5em;
-    }
-
-    &-meta {
-      margin: 0;
-      font-size: $font-size-p-small;
-      color: $color-neutral-light;
-    }
-  }
-
-  &-content {
-    display: inline-block;
-    margin: 2em 0;
-    text-align: left;
-    max-width: 800px;
-    width: 100%;
-    overflow: hidden;
-  }
+}
+.post-details-title {
+  margin: 0 0 0.5em;
+}
+.post-details-meta {
+  margin: 0;
+  font-size: var(--font-size-p-small);
+  color: var(--color-neutral-light);
+}
+.post-content {
+  display: inline-block;
+  margin: 2em 0;
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 720px) {
@@ -165,20 +151,15 @@ export default {
     padding: 1em 0;
     flex-direction: column;
     box-shadow: none;
-
-    &-info {
-      display: none;
-    }
   }
-  .post-details {
-
-    &-title {
-      font-size: $font-size-h3;
-    }
-
-    &-meta {
-      font-size: $font-size-label;
-    }
+  .status-info {
+    display: none;
+  }
+  .post-details-title {
+    font-size: var(--font-size-h3);
+  }
+  .post-details-meta {
+    font-size: var(--font-size-label);
   }
 }
 </style>

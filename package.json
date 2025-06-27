@@ -10,13 +10,11 @@
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.4.0",
-    "gridsome": "^0.7.13",
+    "gridsome": "^0.7.23",
     "nprogress": "^0.2.0"
   },
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "sass-loader": "^10.1.1",
-    "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
+    "vue": "^2.7.16",
+    "vue-template-compiler": "^2.7.16"
   }
 }

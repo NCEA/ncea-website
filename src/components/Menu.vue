@@ -33,118 +33,95 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .menu {
   display: block;
-  max-width: $max-width;
+  max-width: var(--max-width);
   width: 100%;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -1.5em;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 150px;
-    background: radial-gradient(farthest-corner at top, $color-background-dark, transparent);
-  }
-
-  &-logo {
-    position: absolute;
-    background: none;
-    box-shadow: none;
-    z-index: 99;
-    cursor: pointer;
-
-    &-image {
-      height: 90px;
-    }
-  }
-
-  &-nav {
-    display: block;
-    text-align: right;
-
-    &-list {
-      display: inline-block;
-      width: 100%;
-      max-width: $max-width;
-    }
-
-    &-item {
-      display: inline-block;
-      position: relative;
-      background: none;
-      padding: 2em 1.5em;
-      font-size: $font-size-h5;
-      font-family: $font-family-heading;
-      font-weight: 600;
-      box-shadow: none;
-
-      &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 2px;
-        background: transparent;
-      }
-
-      &-active {
-        &::after {
-          background: rgba($color-accent-dark, .2);
-        }
-      }
-
-      &:hover,
-      &:focus-visible {
-        &::after {
-          background: $color-accent-dark;
-        }
-      }
-
-      &-cta {
-        margin-left: 1em;
-
-        &::before {
-          content: '';
-          position: absolute;
-          display: block;
-          width: 100%;
-          height: 50px;
-          left: -2px;
-          top: 21px;
-          border-radius: 12px;
-          border: 2px solid rgba($color-accent-dark, .2);
-          z-index: 0;
-        }
-
-        &::after {
-          background: transparent;
-        }
-
-        &:hover,
-        &:focus-visible {
-          &::before {
-            background: rgba($color-accent-dark, .1);
-          }
-
-          &::after {
-            background: transparent;
-          }
-        }
-      }
-    }
-  }
-
-  .menu-nav-item-active.menu-nav-item-cta {
-    &::before {
-      background: rgba($color-accent-dark, .1);
-    }
-  }
+}
+.menu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -1.5em;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 150px;
+  background: 
+    radial-gradient(farthest-corner at top, var(--color-background-dark), transparent);
+}
+.menu-logo {
+  position: absolute;
+  background: none;
+  box-shadow: none;
+  z-index: 99;
+  cursor: pointer;
+}
+.menu-logo-image {
+  height: 90px;
+}
+.menu-nav {
+  display: block;
+  text-align: right;
+}
+.menu-nav-list {
+  display: inline-block;
+  width: 100%;
+  max-width: var(--max-width);
+}
+.menu-nav-item {
+  display: inline-block;
+  position: relative;
+  background: none;
+  padding: 2em 1.5em;
+  font-size: var(--font-size-h5);
+  font-family: var(--font-family-heading);
+  font-weight: 600;
+  box-shadow: none;
+}
+.menu-nav-item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+}
+.menu-nav-item-active::after {
+  background: color-mix(in srgb, var(--color-accent-dark) 20%, transparent);
+}
+.menu-nav-item:hover::after,
+.menu-nav-item:focus-visible::after {
+  background: var(--color-accent-dark);
+}
+.menu-nav-item-cta {
+  margin-left: 1em;
+}
+.menu-nav-item-cta::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 50px;
+  left: -2px;
+  top: 21px;
+  border-radius: 12px;
+  border: 2px solid color-mix(in srgb, var(--color-accent-dark) 20%, transparent);
+  z-index: 0;
+}
+.menu-nav-item-cta::after {
+  background: transparent;
+}
+.menu-nav-item-cta:hover::before,
+.menu-nav-item-cta:focus-visible::before {
+  background: color-mix(in srgb, var(--color-accent-dark) 10%, transparent);
+}
+.menu-nav-item-cta:hover::after,
+.menu-nav-item-cta:focus-visible::after {
+  background: transparent;
+}
+.menu .menu-nav-item-active.menu-nav-item-cta::before {
+  background: color-mix(in srgb, var(--color-accent-dark) 10%, transparent);
 }
 
 @media (max-width: 960px) {

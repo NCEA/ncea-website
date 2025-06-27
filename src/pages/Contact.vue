@@ -135,69 +135,59 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~/assets/style/_variables.scss';
-
+<style scoped>
 .contact-title {
   margin: .75em 0 .4em;
 }
 .contact-subtitle {
   font-weight: 500;
-  font-size: $font-size-h4;
-  color: $color-neutral-light;
+  font-size: var(--font-size-h4);
+  color: var(--color-neutral-light);
   margin: .4em 0 1.5em;
 }
-
 .columns {
   display: flex;
   margin: 3em 0 0;
-
-  &-left {
-    max-width: 300px;
-    margin: 0 3em 0 0;
-    padding: 1em 3em 1em 0;
-    border: 2px solid rgba($color-neutral-light, .1);
-    border-width: 0 2px 0 0;
-
-    .contacts {
-      margin: 0 0 2em;
-
-      &-heading {
-        margin: 0 0 1em;
-      }
-
-      &-list {
-        list-style: none;
-        padding: 0;
-        margin: 1.5em 0;
-
-        &-item {
-          margin: 0 0 2em;
-        }
-      }
-    }
-  }
-  &-right {
-    flex: 1;
-
-    .form,
-    #message {
-      max-width: 600px;
-    }
-  }
+}
+.columns-left {
+  max-width: 300px;
+  margin: 0 3em 0 0;
+  padding: 1em 3em 1em 0;
+  border: 2px solid color-mix(in srgb, var(--color-neutral-light) 10%, transparent);
+  border-width: 0 2px 0 0;
+}
+.columns-left .contacts {
+  margin: 0 0 2em;
+}
+.columns-left .contacts-heading {
+  margin: 0 0 1em;
+}
+.columns-left .contacts-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5em 0;
+}
+.columns-left .contacts-list-item {
+  margin: 0 0 2em;
+}
+.columns-right {
+  flex: 1;
+}
+.columns-right .form,
+.columns-right #message {
+  max-width: 600px;
 }
 
 @media (max-width: 720px) {
   .columns {
     flex-direction: column;
     align-items: stretch;
-
-    &-left {
-      border-width: 0 0 2px;
-      margin: 0 0 3em;
-      padding: 1em 0 3em;
-      max-width: none;
-    }
+  }
+  .columns-left {
+    border-width: 0 0 2px;
+    margin: 0 0 3em;
+    padding: 1em 0 3em;
+    max-width: none;
   }
 }
 </style>
