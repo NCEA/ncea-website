@@ -29,23 +29,25 @@
       </a>
     </section>
 
-    <div v-if="videoVisible" class="modal">
-      <div class="modal-backdrop" @click="videoVisible=false"></div>
-      <div class="modal-content">
-        <div class="modal-content-top">
-          <a class="modal-button-top-close" href="#" title="Close welcome video" @click="videoVisible=false">
-            <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960">
-              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-            </svg>
-          </a>
-        </div>
-        <div class="modal-content-video">
-          <video controls autoplay>
-            <source :src="$page.data.splash.welcomevideo" type="video/mp4" />
-          </video>
+    <transition name="modal" mode="out-in">
+      <div v-if="videoVisible" class="modal">
+        <div class="modal-backdrop" @click="videoVisible=false"></div>
+        <div class="modal-content">
+          <div class="modal-content-top">
+            <a class="modal-button-top-close" href="#" title="Close welcome video" @click="videoVisible=false">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 -960 960 960">
+                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="modal-content-video">
+            <video controls autoplay>
+              <source :src="$page.data.splash.welcomevideo" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
-    </div>
+    </transition>
 
   </Layout>
 </template>
@@ -140,6 +142,15 @@ export default {
   background: transparent;
   z-index: 99;
 }
+.modal-enter-active, 
+.modal-leave-active {
+  transition: .2s ease;
+}
+.modal-enter, 
+.modal-leave-to  {
+  opacity: 0;
+  transform: scale(1.1);
+}
 .modal-backdrop {
   position: absolute;
   display: block;
@@ -149,7 +160,7 @@ export default {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: color-mix(in srgb, var(--color-background-light) 50%, transparent);
+  background: color-mix(in srgb, var(--color-background-dark) 50%, transparent);
   backdrop-filter: blur(8px);
   z-index: -1;
 }
