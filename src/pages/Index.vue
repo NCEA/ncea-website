@@ -171,6 +171,8 @@ export default {
   width: 100%;
   max-width: var(--max-width);
   border-radius: 10px;
+  box-shadow: 0 4px 8px color-mix(in srgb,var(--color-neutral-dark) 15%,transparent),
+    0 8px 36px color-mix(in srgb,var(--color-neutral-dark) 15%,transparent);
 }
 .modal-content-top {
   display: flex;
