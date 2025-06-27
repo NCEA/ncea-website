@@ -22,6 +22,7 @@
     --font-size-p-large: 1.025em;
     --font-size-p-small: 1em;
     --font-size-label: .889em;
+    --font-base: var(--font-size-p-large) var(--font-family);
 
     /* Sizing */
     --max-width: 1400px

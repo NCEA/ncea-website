@@ -9,7 +9,7 @@ body {
     padding: 0;
     background: var(--color-background-dark);
     color: var(--color-neutral-dark);
-    font: 400 var(--font-size-p-large) var(--font-family);
+    font: 400 var(--font-base);
     line-height: 1.25;
     max-width: var(--max-width);
 }
