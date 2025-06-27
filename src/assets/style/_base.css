@@ -93,7 +93,7 @@ blockquote {
     padding: 1em 1.25em;
     border-left: 4px solid var(--color-accent-dark);
     color: var(--color-neutral-dark);
-    font: 400 var(--font-size-p-small) var(--font-family);
+    font: 400 var(--font-small);
     background: no-repeat top left url('/images/uploads/quote.svg'),
         var(--color-accent-light);
     background-size: 48px;

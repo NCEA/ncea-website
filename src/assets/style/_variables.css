@@ -23,6 +23,9 @@
     --font-size-p-small: 1em;
     --font-size-label: .889em;
     --font-base: var(--font-size-p-large) var(--font-family);
+    --font-small: var(--font-size-p-small) var(--font-family);
+    --font-button: var(--font-size-p-large) var(--font-family-heading);
+    --font-label: var(--font-size-label) var(--font-family);
 
     /* Sizing */
     --max-width: 1400px

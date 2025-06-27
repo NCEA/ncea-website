@@ -11,7 +11,7 @@
     border-radius: 6px;
     padding: .75em 1em;
     color: var(--color-neutral-dark);
-    font: 400 var(--font-size-p-small) var(--font-family);
+    font: 400 var(--font-small);
     box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-neutral-light) 50%, transparent),
                 0 2px 4px color-mix(in srgb, var(--color-neutral-dark) 15%, transparent);
 
@@ -29,7 +29,7 @@
 .form .label {
     display: block;
     color: var(--color-neutral-light);
-    font: 500 var(--font-size-label) var(--font-family);
+    font: 500 var(--font-label);
     margin: 1em 0 .5em;
 }
 .form .label:focus,

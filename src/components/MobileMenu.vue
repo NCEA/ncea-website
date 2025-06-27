@@ -124,7 +124,7 @@ export default {
   border: none;
   background: none;
   color: var(--color-accent-dark);
-  font: 600 var(--font-size-p-small) var(--font-family);
+  font: 600 var(--font-small);
   text-transform: uppercase;
   z-index: 99;
   cursor: pointer;
