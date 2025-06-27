@@ -34,9 +34,9 @@ collections:
                 {label: "Subheading", name: "subheading", widget: "string"},
                 {label: "Image (Desktop)", name: "largeimage", widget: "image"},
                 {label: "Image (Mobile)", name: "smallimage", widget: "image"},
+                {label: "Welcome Video", name: "welcomevideo", widget: "file"},
                 {label: "Button", name: "button", widget: "object", fields: [
-                    {label: "Name", name: "name", widget: "string"},
-                    {label: "Url", name: "url", widget: "string"}
+                    {label: "Name", name: "name", widget: "string"}
                 ]}
             ]}
       - file: "content/about.md"
